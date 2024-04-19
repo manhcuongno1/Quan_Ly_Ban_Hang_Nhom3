@@ -19,11 +19,11 @@ function MenuItem({ coffee }) {
             <p className="text-sm">{formatCurrency(unitPrice)}</p>
           ) : (
             <p className="text-sm font-medium uppercase text-stone-500">
-              Sold out
+              Hết hàng
             </p>
           )}
 
-          <Button type="small">Add to cart</Button>
+          <Button type="small">Thêm vào giỏ hàng</Button>
         </div>
       </div>
     </li>

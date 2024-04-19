@@ -10,26 +10,26 @@ const isValidPhone = (str) =>
 
 const fakeCart = [
     {
-        pizzaId: 12,
-        name: "Mediterranean",
+        coffeId: 12,
+        name: 'Cà phê đen',
         quantity: 2,
         unitPrice: 16,
-        totalPrice: 32,
-    },
-    {
-        pizzaId: 6,
-        name: "Vegetale",
+        totalPrice: 5,
+      },
+      {
+        coffeId: 6,
+        name: 'Trà đào',
         quantity: 1,
         unitPrice: 13,
         totalPrice: 13,
-    },
-    {
-        pizzaId: 11,
-        name: "Spinach and Mushroom",
+      },
+      {
+        coffeId: 11,
+        name: 'Cà phê sữa',
         quantity: 1,
         unitPrice: 15,
         totalPrice: 15,
-    },
+      },
 ];
 
 function CreateOrder() {
@@ -38,23 +38,23 @@ function CreateOrder() {
 
     return (
         <div className="px-4 py-6">
-            <h2 className="mb-8 text-xl font-semibold">Ready to order? Let's go!</h2>
+            <h2 className="mb-8 text-xl font-semibold">Xác nhận đặt hàng</h2>
 
             <Form method="POST">
                 <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center">
-                    <label className="sm:basis-40">First Name</label>
+                    <label className="sm:basis-40">Họ Và Tên</label>
                     <input className="input grow" type="text" name="customer" required />
                 </div>
 
                 <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center">
-                    <label className="sm:basis-40">Phone number</label>
+                    <label className="sm:basis-40">Số điện thoại</label>
                     <div className="grow">
                         <input className="input w-full" type="tel" name="phone" required />
                     </div>
                 </div>
 
                 <div className="relative mb-5 flex flex-col gap-2 sm:flex-row sm:items-center">
-                    <label className="sm:basis-40">Address</label>
+                    <label className="sm:basis-40">Địa chỉ nhận hàng</label>
                     <div className="grow">
                         <input className="input w-full" type="text" name="address" required />
                     </div>
@@ -70,7 +70,7 @@ function CreateOrder() {
                         // onChange={(e) => setWithPriority(e.target.checked)}
                     />
                     <label htmlFor="priority" className="font-medium">
-                        Want to yo give your order priority?
+                        Tôi xác nhận, và thanh toán đơn hàng
                     </label>
                 </div>
 
@@ -80,7 +80,7 @@ function CreateOrder() {
                         name="cart"
                         value={JSON.stringify(cart)}
                     />
-                    <Button type="primary">Order now</Button>
+                    <Button type="primary">Đặt ngay</Button>
                 </div>
             </Form>
         </div>

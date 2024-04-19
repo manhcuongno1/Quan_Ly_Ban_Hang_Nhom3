@@ -1,10 +1,9 @@
 export function formatCurrency(value) {
-  return new Intl.NumberFormat("en", {
+  return new Intl.NumberFormat("vi-VN", {
     style: "currency",
-    currency: "EUR",
-  }).format(value);
+    currency: "VND",
+  }).format(value).replace(/₫/g, 'VND');
 }
-
 export function formatDate(dateStr) {
   return new Intl.DateTimeFormat("en", {
     day: "numeric",
