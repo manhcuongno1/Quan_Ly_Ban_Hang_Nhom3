@@ -20,6 +20,14 @@ function Header() {
                   {/* <CgProfile /> */}
                   <span>Đăng nhập</span>
                 </Link>
+              </li><li>
+                <Link to={""} className="flex items-center space-x-1">
+                  {/* <CgProfile /> */}
+                  <span>Đăng kí</span>
+                  <div className="container">
+
+                  </div>
+                </Link>
               </li>
             </ul>
           </div>
@@ -32,7 +40,36 @@ function Header() {
               <h1 className="text-2xl font-bold">Coffe IT</h1>
             </div>
           </div>
-          <div className="col-xl-6">MENU</div>
+          <div className="col-xl-6">
+            <ul className="flex space-x-20">
+              <li>
+                <Link to="/products" className="text-gray-600 hover:text-black">
+                  Trang chủ
+                </Link>
+              </li>
+              <li>
+                <Link to="/orders" className="text-gray-600 hover:text-black">
+                  Cửa hàng
+                </Link>
+              </li>
+              <li>
+                <Link to="/customers" className="text-gray-600 hover:text-black">
+                  Sản phẩm
+                </Link>
+              </li>
+              <li>
+                <Link to="/customers" className="text-gray-600 hover:text-black">
+                  Bài viết
+                </Link>
+              </li>
+              <li>
+                <Link to="/customers" className="text-gray-600 hover:text-black">
+                  Liên hệ
+                </Link>
+              </li>
+              {/* Thêm các chức năng khác ở đây */}
+            </ul>
+          </div>
           <div className="col-xl-3 flex justify-end items-center">
             <div className="header_cart flex items-center space-x-2">
               <div className="header_cart_price">
@@ -42,7 +79,7 @@ function Header() {
                 <li>
                   <Link to="#" className="flex items-center space-x-1">
                     {/* <AiOutlineShoppingCart /> */}
-                    <span>5</span>
+                    <span></span>
                   </Link>
                 </li>
               </ul>

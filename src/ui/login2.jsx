@@ -1,9 +1,5 @@
-import { Link } from "react-router-dom";
-import SearchOrder from "../features/order/SearchOrder";
-import Username from "../features/user/Username";
-import { formatCurrency } from '../utils/helpers';
 
- export  default function login () {
+function login2 () {
     return (
         <div className="register-page">
             <div className="register-form-container">
@@ -35,9 +31,7 @@ import { formatCurrency } from '../utils/helpers';
                 </form>
 
             </div>
-
-        </div>
+        </div>       
     )
-    
-
 }
+export  default login2 ;
