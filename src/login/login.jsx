@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import SearchOrder from "../features/order/SearchOrder";
 import Username from "../features/user/Username";
-import { formatCurrency } from '../utils/helpers';
+import { formatCurrency } from '../utils/helpers';  
+import "./login.css";
 
- export  default function login () {
+ export  default function Login () {
     return (
         <div className="register-page">
             <div className="register-form-container">
@@ -11,7 +12,7 @@ import { formatCurrency } from '../utils/helpers';
                 <form>
                     <div>
                         <label htmlFor="first-name" className="form-label">
-                            Tên người dùng
+                            Tên người dùng :
                         </label>
                         <input
                         id="firt-name"
@@ -20,9 +21,9 @@ import { formatCurrency } from '../utils/helpers';
                         name="firtName"
                         />
                     </div>
-                    <div>className="mb-2"
+                    <div>
                     <label htmlFor="password" className="from-label">
-                        Mật Khẩu 
+                        Mật Khẩu :
                     </label>
                     <input
                     id="password"
@@ -31,6 +32,9 @@ import { formatCurrency } from '../utils/helpers';
                     name="password"
                     />
                     </div>
+                    <button type="sumbit" className="sumbit-btn">
+                        Đăng Nhập
+                    </button>
 
                 </form>
 

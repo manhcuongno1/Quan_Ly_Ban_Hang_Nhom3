@@ -1,8 +1,8 @@
 h1.title {
-    
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
-    transform: translateY(-69px)
+    transform: translateY(-29px)
+    translateX(300px)
 }
 .register-page {
     height: 100vh;
@@ -12,50 +12,53 @@ h1.title {
 }
 
 .register-form-container {
-    width: 520px;
-    padding: 118px;
+    width: 920px;
+    padding: 18px;
     box-shadow: 0px 0px 21px rgb(0 0 0 / 20%);
     background: wheat;
 }
 
 label.form-label {
-    width: 100%;
     display: block;
+    width: 100%;
     font-size: 30px;
-    transform: translateY(-3px)
-    translateX(40px);
+    transform: translateY(-9px)
+    translateX(20px);
 
 }
 input#firt-name {
-    width: 70%;
-    transform: translateY(9px)
-    translateX(35px);
+    width: 90%;
+    transform: translateY(-9px)
+    translateX(20px);
+    font-size: 30px;
+}
+label.from-label {
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    transform: translateY(-9px)
+    translateX(20px);
+}
+
+label.from-label {}
+
+
+input#password {
+    width: 90%;
+    transform: translateY(-9px)
+    translateX(20px);
     font-size: 30px;
 }
 
-label.from-label {
-    width: 100%;
-    display: block;
-    font-size: 30px;
-    transform: translateY(-3px)
-    translateX(40px);
-    
-}
-input#password {
-    width: 70%;
-    transform: translateY(9px)
-    translateX(35px);
-    font-size: 30px;
-}
 div {
     font-size: 25px;
 }
 
 button.sumbit-btn {
-    width: 70%;
+    width: 30%;
     padding: 12px;
-    transform: translateY(50px)
-    translateX(160px);
+    transform: translateY(10px)
+    translateX(280px);
    
 }
 .sumbit-btn {

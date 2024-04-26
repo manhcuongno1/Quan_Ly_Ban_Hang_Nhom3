@@ -8,6 +8,8 @@ import CreateOrder, {
     action as createOrderAction,
 } from "./features/order/CreateOrder";
 import Order, { loader as orderLoader } from "./features/order/Order";
+import Login from "./login/login";
+import Register from "./register/Register";
 
 const router = createBrowserRouter([
     {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
                 element: <Cart />,
             },
             {
+                path: "/login",
+                element: <Login />,
+            },
+            {
+                path: "/register",
+                element: <Register />,
+            },
+            {
                 path: "/order/new",
                 element: <CreateOrder />,
                 action: createOrderAction,
@@ -37,6 +47,7 @@ const router = createBrowserRouter([
                 element: <Order />,
                 loader: orderLoader,
             },
+            
         ],
     },
 ]);

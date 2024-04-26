@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SearchOrder from "../features/order/SearchOrder";
 import Username from "../features/user/Username";
 import { formatCurrency } from '../utils/helpers';
+import "./Header.css";
 
 function Header() {
   return (
@@ -16,12 +17,12 @@ function Header() {
           <div className="col-6_top_right">
             <ul>
               <li>
-                <Link to={""} className="flex items-center space-x-1">
+                <Link to={"/login"} className="flex items-center space-x-1">
                   {/* <CgProfile /> */}
                   <span>Đăng nhập</span>
                 </Link>
               </li><li>
-                <Link to={""} className="flex items-center space-x-1">
+                <Link to={"/register"} className="flex items-center space-x-1">
                   {/* <CgProfile /> */}
                   <span>Đăng kí</span>
                   <div className="container">
@@ -43,7 +44,7 @@ function Header() {
           <div className="col-xl-6">
             <ul className="flex space-x-20">
               <li>
-                <Link to="/products" className="text-gray-600 hover:text-black">
+                <Link to="/" className="text-gray-600 hover:text-black">
                   Trang chủ
                 </Link>
               </li>
@@ -73,7 +74,7 @@ function Header() {
           <div className="col-xl-3 flex justify-end items-center">
             <div className="header_cart flex items-center space-x-2">
               <div className="header_cart_price">
-                <span>{formatCurrency(1000000)}</span>
+
               </div>
               <ul>
                 <li>
