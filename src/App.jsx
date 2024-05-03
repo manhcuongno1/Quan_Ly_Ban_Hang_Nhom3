@@ -10,6 +10,8 @@ import CreateOrder, {
 import Order, { loader as orderLoader } from "./features/order/Order";
 import Login from "./login/login";
 import Register from "./register/Register";
+import Product from "./ui/Product";
+import Contact from "./contact/Contact"
 
 const router = createBrowserRouter([
     {
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
             {
                 path: "/register",
                 element: <Register />,
+            },
+            {
+                path: "/product",
+                element: <Product />,
+            },
+            {
+                path: "/contact",
+                element: <Contact />,
             },
             {
                 path: "/order/new",

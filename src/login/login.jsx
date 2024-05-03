@@ -6,8 +6,8 @@ import "./login.css";
 
  export  default function Login () {
     return (
-        <div className="register-page">
-            <div className="register-form-container">
+        <div className="login-page">
+            <div className="login-form-container">
                 <h1 className="title"> Đăng nhập</h1>
                 <form>
                     <div>

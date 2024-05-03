@@ -1,64 +1,36 @@
 h1.title {
     font-size: 70px;
     font-weight: bold;
-    transform: translateY(-29px)
-    translateX(300px)
+    transform: 
+    translateY(-79px)
+    translateX(200px);
 }
 .register-page {
-    height: 100vh;
+    height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .register-form-container {
-    width: 920px;
-    padding: 18px;
+    width: 950px;
+    padding: 118px;
     box-shadow: 0px 0px 21px rgb(0 0 0 / 20%);
     background: wheat;
 }
-
-label.form-label {
-    display: block;
+label.from-label{
     width: 100%;
-    font-size: 30px;
-    transform: translateY(-9px)
-    translateX(20px);
-
 }
-input#firt-name {
-    width: 90%;
-    transform: translateY(-9px)
-    translateX(20px);
-    font-size: 30px;
+.form-control{
+height: 40px;
+display: block;
+width: 100%;
+padding: 6px 12px;
 }
-label.from-label {
-    display: block;
-    width: 100%;
-    font-size: 30px;
-    transform: translateY(-9px)
-    translateX(20px);
-}
-
-label.from-label {}
-
-
-input#password {
-    width: 90%;
-    transform: translateY(-9px)
-    translateX(20px);
-    font-size: 30px;
-}
-
-div {
-    font-size: 25px;
-}
-
 button.sumbit-btn {
-    width: 30%;
+    width: 50%;
     padding: 12px;
-    transform: translateY(10px)
-    translateX(280px);
+    transform: translateY(50px)
+    translateX(160px);
    
 }
 .sumbit-btn {
@@ -73,4 +45,7 @@ button.sumbit-btn {
     margin: 4px 2px; /* Khoảng cách xung quanh nút */
     cursor: pointer; /* Con trỏ hiển thị khi di chuột vào nút */
     border-radius: 10px; /* Bo tròn góc */
-  }   
+  }
+.mb-2 {
+    margin-bottom: 16px ;
+}   
