@@ -8,3 +8,12 @@ export async function getDrinks() {
 
     return data;
 }
+
+export async function getRole() {
+
+    let { data, error } = await supabase
+        .from('Accounts')
+        .select('Role')
+
+    return data;
+}

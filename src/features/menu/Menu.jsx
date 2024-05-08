@@ -20,7 +20,7 @@ function Menu() {
 }
 
 export async function loader() {
-  const menu = await getMenu();
+  const menu = await getDrinks();
   return menu;
 }
 
