@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import AppLayout from "./ui/AppLayout";
 import Home from "./ui/Home";
+import Users from "./pages/Users";
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -29,21 +30,25 @@ function AppContent() {
 
      // Kiểm tra xem email có phải là admin hay không
     const isAdmin = email === "admin@gmail.com";
-
+   
     return (
         <>
-            {isAdmin && <GlobalStyles />}
+            {isAdmin  && <GlobalStyles />}
             <BrowserRouter>
                 <Routes>
                     {isAdmin ? (
                         <Route element={<AppLayoutAdmin />}>
                             <Route index element={<Navigate replace to="dashboard" />} />
                             <Route path="dashboard" element={<Dashboard />} />
+                            <Route path="users" element={<Users />} />
+
+
                         </Route>
+                        
                     ) : (
                         <Route element={<AppLayout />}>
                                 <Route index element={<Navigate replace to="home" />} />
-                            <Route path="home" element={<Home />} />
+                                <Route path="home" element={<Home />} />
                                 
                         </Route>
                     )

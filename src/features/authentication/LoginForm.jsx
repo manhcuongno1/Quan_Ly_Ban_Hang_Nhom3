@@ -6,10 +6,10 @@ import FormRowVertical from "../../ui/FormRowVertical";
 import { useLogin } from "./useLogin";
 
 
-function LoginForm({onLogin}) {
+function LoginForm() {
   const [email, setEmail] = useState("admin@gmail.com");
   const [password, setPassword] = useState("12345678");
-  const { login, isLoading } = useLogin(onLogin);    
+  const { login, isLoading } = useLogin();    
  
 
   function handleSubmit(e) {
@@ -17,14 +17,14 @@ function LoginForm({onLogin}) {
     if (!email || !password) return;
     login(
       { email, password }
+    ,
+      {
+        onSettled: () => {
+          setEmail("");
+          setPassword("");
+        },
+      }
     );
-    //   {
-    //     onSettled: () => {
-    //       setEmail("");
-    //       setPassword("");
-    //     },
-    //   }
-    // );
   }
 
   return (
