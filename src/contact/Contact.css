@@ -1,0 +1,57 @@
+h1.contact {
+  font-size: 52px;
+  color: white;
+  transform: translateY(-150px) translateX(20px);
+}
+h2.contact-2 {
+  font-size: 25px;
+  color: #ffff99;
+  transform: translateY(-100px) translateX(20px);
+}
+input#name {
+  padding: 3px;
+  width: 285px;
+  transform: translateY(0px) translateX(10px);
+}
+input#number {
+  padding: 3px;
+  width: 285px;
+  transform: translateY(0px) translateX(10px);
+}
+textarea#message {
+  padding: 3px;
+  width: 285px;
+  transform: translateY(21px) translateX(10px);
+}
+label1 {
+  font-size: 30px;
+}
+label2 {
+  font-size: 30px;
+}
+label3 {
+  font-size: 30px;
+}
+button {
+  font-size: 25px;
+}
+.contact-from-container {
+  width: 1210px;
+  padding: 158px;
+  box-shadow: 0px 0px 21px rgb(0 0 0 / 20%);
+  background: #99ccff;
+}
+button.sumbit-btn1 {
+  background-color: #4caf50; /* Màu nền */
+  border: none; /* Không có viền */
+  color: white; /* Màu chữ */
+  padding: 10px 12px; /* Độ rộng và chiều cao của nút */
+  text-align: center; /* Căn giữa văn bản */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Kích thước chữ */
+  margin: 4px 2px; /* Khoảng cách xung quanh nút */
+  cursor: pointer; /* Con trỏ hiển thị khi di chuột vào nút */
+  border-radius: 10px; /* Bo tròn góc */
+  transform: translateY(71px) translateX(-10px);
+}
