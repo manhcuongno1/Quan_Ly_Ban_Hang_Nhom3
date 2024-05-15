@@ -44,7 +44,7 @@ function Header() {
               </Link>
             </li5>
             <li6 class='nvd-top-menu-item'>
-              <a href='#' class='flex items-center'>
+              <a1 href='#' class='flex items-center'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
@@ -64,7 +64,7 @@ function Header() {
                 <span class='nvd-badge-circle bg-orange-500 text-white'>
                   {storage.cartItems.length}
                 </span>
-              </a>
+              </a1>
             </li6>
 
             <li7 className='account-item' onClick={handleShowDropdown}>

@@ -10,7 +10,7 @@ function ProductIntroduction() {
         </div>
         <div className='origin-form-container'>
           <h1 className='title-origin'> Nguồn Gốc </h1>
-          <h2 className='title-origin2'>Câu chuyện này là của chúng mình</h2>
+          <h2 className='title-origin2'>CÂU CHUYỆN NÀY LÀ CỦA CHÚNG MÌNH</h2>
           <h3 className='title-origin3'>
             Coffe IT được thành lập từ những chàng trai sinh viên có đam mê lập trình,bắt nguồn từ
             đam
@@ -27,7 +27,11 @@ function ProductIntroduction() {
           </h6>
         </div>
         <div className='element'></div>
-        <button className='origin-button'>Xem Thêm Chi Tiết</button>
+        <div>
+          <a href='origin'>
+            <button className='origin-button'>Xem Thêm Chi Tiết</button>
+          </a>
+        </div>
         <div>
           <img src='./imgs/favicon/phucvu.jpg' className='first-image' />
         </div>
@@ -44,7 +48,11 @@ function ProductIntroduction() {
           <h5 className='title-service5'>
             tôi . Nếu có gì cần góp ý đừng ngần ngại liên hện với chúng tôi nha 😘
           </h5>
-          <button className='service-button'>Xem Thêm Chi Tiết</button>
+          <div>
+            <a href='/contact'>
+              <button className='service-button'>Xem Thêm Chi Tiết</button>
+            </a>
+          </div>
         </div>
         <div className='element1'></div>
         <div>
@@ -71,7 +79,9 @@ function ProductIntroduction() {
           <h7 className='title-consultation7'>
             cho các bạn trẻ đã, đang và sẽ theo học ngành CNTT.
           </h7>
-          <button className='consultation-button'>Xem Thêm Chi Tiết</button>
+          <div>
+            <button className='consultation-button'>Xem Thêm Chi Tiết</button>
+          </div>
         </div>
       </div>
     </div>

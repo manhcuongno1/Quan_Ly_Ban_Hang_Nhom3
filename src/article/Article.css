@@ -37,15 +37,27 @@ h6.title-origin6 {
   transform: translateY(-385px) translateX(-95px);
 }
 .origin-button {
-  background-color: transparent;
-  width: 350px;
-  border: 2px solid #00cc00; /* Màu viền */
-  border-radius: 40px;
-  color: #fff; /* Màu chữ */
-  padding: 10px 20px; /* Kích thước nút */
+  background-color: transparent; /* Màu nền trong suốt */
+  border: 2px solid black; /* Đường viền 2px màu xanh lá cây */
+  color: black; /* Màu chữ xanh lá cây */
+  padding: 10px 20px; /* Khoảng cách bên trong */
   font-size: 16px; /* Kích thước chữ */
-  cursor: pointer;
+  cursor: pointer; /* Con trỏ chuột */
+  padding: 10px 105px;
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Hiệu ứng chuyển đổi */
   transform: translateY(-459px) translateX(135px);
+}
+
+.origin-button:hover {
+  background-color: #d56268; /* Màu nền xanh lá cây khi di chuột qua */
+  color: black; /* Màu chữ trắng khi di chuột qua */
+}
+
+.origin-button:focus {
+  outline: none; /* Loại bỏ viền outline khi focus */
+  box-shadow: 0 0 5px #d56268; /* Đổ bóng khi focus */
 }
 img.first-image {
   background-position: 70% 30%;
@@ -77,15 +89,26 @@ h5.title-service5 {
   font-size: 18px;
 }
 .service-button {
-  background-color: transparent;
-  width: 450px;
-  border: 2px solid #00cc00; /* Màu viền */
-  border-radius: 40px;
-  color: #fff; /* Màu chữ */
-  padding: 10px 20px; /* Kích thước nút */
+  background-color: transparent; /* Màu nền trong suốt */
+  border: 2px solid black; /* Đường viền 2px màu xanh lá cây */
+  color: black; /* Màu chữ xanh lá cây */
+  padding: 10px 20px; /* Khoảng cách bên trong */
   font-size: 16px; /* Kích thước chữ */
-  cursor: pointer;
+  cursor: pointer; /* Con trỏ chuột */
+  padding: 10px 105px;
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Hiệu ứng chuyển đổi */
   transform: translateY(59px) translateX(135px);
+}
+.service-button:hover {
+  background-color: #d56268; /* Màu nền xanh lá cây khi di chuột qua */
+  color: black; /* Màu chữ trắng khi di chuột qua */
+}
+
+.service-button:focus {
+  outline: none; /* Loại bỏ viền outline khi focus */
+  box-shadow: 0 0 5px #d56268; /* Đổ bóng khi focus */
 }
 .element1 {
   border-bottom: 2px solid #000;
@@ -130,20 +153,32 @@ h7.title-consultation7 {
   font-size: 18px;
 }
 .consultation-button {
-  background-color: transparent;
-  width: 450px;
-  border: 2px solid #00cc00; /* Màu viền */
-  border-radius: 40px;
-  color: #fff; /* Màu chữ */
-  padding: 10px 20px; /* Kích thước nút */
+  background-color: transparent; /* Màu nền trong suốt */
+  border: 2px solid black; /* Đường viền 2px màu xanh lá cây */
+  color: black; /* Màu chữ xanh lá cây */
+  padding: 10px 20px; /* Khoảng cách bên trong */
   font-size: 16px; /* Kích thước chữ */
-  cursor: pointer;
+  cursor: pointer; /* Con trỏ chuột */
+  padding: 10px 105px;
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Hiệu ứng chuyển đổi */
   transform: translateY(32px) translateX(85px);
 }
+.consultation-button:hover {
+  background-color: #d56268; /* Màu nền xanh lá cây khi di chuột qua */
+  color: black; /* Màu chữ trắng khi di chuột qua */
+}
+
+.consultation-button:focus {
+  outline: none; /* Loại bỏ viền outline khi focus */
+  box-shadow: 0 0 5px #d56268; /* Đổ bóng khi focus */
+}
+
 .article-form-container {
   max-height: 1200px;
   width: 1270px;
   padding: 118px;
   box-shadow: 0px 0px 21px rgb(0 0 0 / 20%);
-  background: linear-gradient(to right, #fff, #33cccc, #ff99cc);
+  background: linear-gradient(to right, #fff, #cc9966);
 }

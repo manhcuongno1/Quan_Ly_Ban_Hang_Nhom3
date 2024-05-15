@@ -11,6 +11,7 @@ import Register from './register/Register';
 import Product from './ui/Product';
 import Contact from './contact/Contact';
 import Article from './article/Article';
+import Origin from './origin/Origin';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />,
+      },
+      {
+        path: '/origin',
+        element: <Origin />,
       },
       {
         path: '/order/new',

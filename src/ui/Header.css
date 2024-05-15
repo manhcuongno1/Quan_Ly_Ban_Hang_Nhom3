@@ -1365,3 +1365,28 @@ video {
 .account-dropdown a:hover {
   color: tomato;
 }
+.bg-white.py-4 {
+  background-color: #d56268;
+}
+h1.basis-2\/6.text-center.text-xl.font-semibold.cursor-pointer {
+  font-weight: bold;
+  color: white;
+}
+
+a.nvd-top-menu-item.bg\:nvd-top-menu-item-active {
+  font-weight: bold;
+  color: white;
+}
+
+a.nvd-top-menu-item {
+  font-weight: bold;
+  color: white;
+}
+a1.flex.items-center {
+  font-weight: bold;
+  color: white;
+}
+li7.account-item {
+  font-weight: bold;
+  color: white;
+}
