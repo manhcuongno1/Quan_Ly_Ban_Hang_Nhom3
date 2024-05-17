@@ -2,12 +2,12 @@ import Button from '../../ui/Button';
 import { formatCurrency } from '../../utils/helpers';
 
 function MenuItem({ coffee }) {
-  const { id, name, unitPrice, soldOut, imageUrl } = coffee;
+  const { id, name, unitPrice, soldOut, image } = coffee;
 
   return (
     <li className="flex gap-4 py-2">
       <img
-        src={imageUrl}
+        src={image}
         alt={name}
         className={`h-[80px] w-[80px] object-cover ${soldOut ? 'opacity-70 grayscale' : ''}`}
       />

@@ -12,11 +12,16 @@ function SignupForm() {
   const { register, formState, getValues, handleSubmit, reset } = useForm();
   const { errors } = formState;
 
+ 
   function onSubmit({ fullName, email, password }) {
     signup(
       { fullName, email, password },
       {
-        onSettled: () => reset(),
+        onSettled: () => {
+          reset();
+          // Quay lại tab hiện tại mà không thay đổi đường dẫn
+          
+        },
       }
     );
   }

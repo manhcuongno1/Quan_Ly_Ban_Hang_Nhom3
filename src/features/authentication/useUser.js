@@ -7,6 +7,5 @@ export function useUser() {
         queryFn: getCurrentUser,
     });
 
-    const email = user?.email || '';
-    return { isLoading, user, isAuthenticated: user?.role === "authenticated", email };
+    return { isLoading, user, isAuthenticated: user?.role === "authenticated" };
 }

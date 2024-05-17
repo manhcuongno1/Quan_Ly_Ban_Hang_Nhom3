@@ -4,10 +4,29 @@ import Username from '../features/user/Username';
 import { formatCurrency } from '../utils/helpers';
 import './Header.css';
 import { useState } from 'react';
+import UserAvatar from '../features/authentication/UserAvatar';
+
+import styled from "styled-components";
+import Logout from '../features/authentication/Logout';
+
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
+  const StyledHeader = styled.header`
+   
 
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+`;
+
+
+
+  const StyledLogout = styled(Logout)`
+    /* Add custom styles for the logout button */
+    font-size: 14px; /* Example size */
+  `;
   const handleShowDropdown = () => {
     setIsActive((prev) => !prev);
   };
@@ -70,20 +89,13 @@ function Header() {
                 <span className='nvd-badge-circle bg-orange-500 text-white'>1</span>
               </div>
             </li>
-
-            <li className='account-item' onClick={handleShowDropdown}>
-              Tài khoản <i className='fa-solid fa-caret-down'></i>
-              {isActive && (
-                <div className='account-dropdown'>
-                  <Link to={'/login'} className='flex items-center space-x-1'>
-                    <span>Đăng nhập</span>
-                  </Link>
-                  <Link to={'/register'} className='flex items-center space-x-1'>
-                    <span>Đăng kí</span>
-                  </Link>
-                </div>
-              )}
-            </li>
+            <li>
+              <StyledHeader>
+                 <UserAvatar/>
+                <StyledLogout />
+              </StyledHeader>
+          </li>
+          
           </ul>
         </div>
       </div>

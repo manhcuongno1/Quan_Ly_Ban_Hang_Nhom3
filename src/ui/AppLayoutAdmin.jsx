@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import HeaderAdmin from "./HeaderAdmin";
 import styled from "styled-components";
+import GlobalStyles from "../styles/GlobalStyles";
 
 const StyledAppLayout = styled.div`
     display: grid;
@@ -15,13 +16,23 @@ const Main = styled.main`
     padding: 4rem 4.8rem 6.4rem;
 `;
 
+const Container = styled.div`
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+`;
 function AppLayoutAdmin() {
     return (
         <StyledAppLayout>
+            <GlobalStyles />
             <HeaderAdmin />
             <Sidebar />
             <Main>
-                <Outlet />
+                <Container>
+                    <Outlet />
+                </Container>
             </Main>
         </StyledAppLayout>
     );
