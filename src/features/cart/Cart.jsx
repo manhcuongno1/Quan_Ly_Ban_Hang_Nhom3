@@ -1,8 +1,9 @@
-import LinkButton from "../../ui/LinkButton";
-import Button from "../../ui/Button";
-import CartItem from "./CartItem";
-import { useContext } from "react";
-import { StorageContext } from "../../Contexts/StorageContext";
+import LinkButton from '../../ui/LinkButton';
+import Button from '../../ui/Button';
+import CartItem from './CartItem';
+import { useContext } from 'react';
+import { StorageContext } from '../../Contexts/StorageContext';
+import './Cart.css';
 
 function Cart() {
   const storage = useContext(StorageContext);
@@ -10,23 +11,23 @@ function Cart() {
     storage.setCartItems([]);
   };
   return (
-    <div className="px-4 py-3">
-      <LinkButton to="/product">&larr; Trở về menu</LinkButton>
+    <div className='px-4 py-3'>
+      <LinkButton to='/product'>&larr; Trở về menu</LinkButton>
 
-      <h2 className="mt-7 text-xl font-semibold">Giỏ Hàng Của Bạn</h2>
+      <h2 className='mt-7 text-xl font-semibold'>Giỏ Hàng Của Bạn</h2>
 
-      <ul className="mt-3 divide-y divide-stone-200 border-b">
+      <ul className='mt-3 divide-y divide-stone-200 border-b'>
         {storage.cartItems.map((item, index) => (
           <CartItem item={item} key={index} />
         ))}
       </ul>
 
-      <div className="mt-6 space-x-2">
-        <Button to="/order/new" type="primary">
+      <div className='mt-6 space-x-2'>
+        <Button to='/order/new' type='primary'>
           Đặt hàng ngay
         </Button>
 
-        <Button onClick={handleDeleteAll} type="secondary">
+        <Button onClick={handleDeleteAll} type='secondary'>
           Xóa giỏ hàng
         </Button>
       </div>

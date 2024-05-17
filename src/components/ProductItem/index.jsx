@@ -26,7 +26,7 @@ function ProductItem({ data = {} }) {
       <div className="nvd-product-card ">
         <div
           style={{
-            backgroundImage: `url('${data.imageUrl}')`,
+            backgroundImage: `url('${data.image}')`,
           }}
           className="h-[400px] sm:h-[540px]  bg-cover bg-no-repeat bg-center"
         >

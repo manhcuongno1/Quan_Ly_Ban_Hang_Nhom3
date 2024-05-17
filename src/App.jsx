@@ -1,8 +1,6 @@
 import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import GlobalStyles from "./styles/GlobalStyles";
 import { useUser } from "./features/authentication/useUser";
 import AppLayoutAdmin from "./ui/AppLayoutAdmin";
 import Dashboard from "./pages/Dashboard";
@@ -13,6 +11,19 @@ import Users from "./pages/Users";
 import { Toaster } from "react-hot-toast";
 import Account from "./pages/Account";
 import Drinks from "./pages/Drinks";
+import Product from './ui/Product';
+// import Article from './article/Article';
+import Origin from './origin/Origin';
+import CreateOrder, { action as createOrderAction } from './features/order/CreateOrder';
+import Order, { loader as orderLoader } from './features/order/Order';
+
+
+
+
+import Menu, { loader as menuLoader } from './features/menu/Menu';
+import Cart from "./features/cart/Cart";
+import { ToastContainer } from "react-toastify";
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -46,6 +57,7 @@ function App() {
             },
           }}
         />
+        
         </QueryClientProvider>
     );
 }
@@ -58,14 +70,16 @@ function AppContent() {
    
     return (
         <>
-            <BrowserRouter>
+        <BrowserRouter>
+          
                 <Routes>
                     {isAdmin ? (
                         <Route path ="/" element={<AppLayoutAdmin />}>
                             <Route index element={<Navigate replace to="dashboard" />} />
                             <Route path="dashboard" element={<Dashboard />} />
                             <Route path="users" element={<Users />} />
-                            <Route path="account" element={<Account />} />
+                <Route path="account" element={<Account />} />
+                
 
                         </Route>
                         
@@ -73,17 +87,23 @@ function AppContent() {
                         <Route path ="/" element={<AppLayout />}>
                                 <Route index element={<Home />} />
                   <Route path="home" element={<Home />} />
-                  
-                                
-                        </Route>
+                  <Route path="menu" element={<Menu />} />
+                  <Route path="cart" element={<Cart />} />
+                  <Route path="product" element={<Product />} />
+                  {/* <Route path="article" element={<Article />} /> */}
+                  <Route path="origin" element={<Origin />} />
+                  <Route path="order/new" element={<CreateOrder />} />
+                  <Route path="order/:orderId" element={<Order  />} />
+           </Route>
                     )
                     }
                             <Route path="login" element={<Login />} />     
                            <Route  element={<AppLayoutAdmin />}>                          
                            <Route path="users" element={<Users />} />
                             <Route path="dashboard" element={<Dashboard />} />
-                             <Route path="account" element={<Account />} />
-                        <Route path="drinks" element={<Drinks />} />
+                          <Route path="account" element={<Account />} />
+                          <Route path="drinks" element={<Drinks />} />
+              
               
                           </Route>
             
