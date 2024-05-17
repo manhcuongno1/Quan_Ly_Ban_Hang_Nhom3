@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { StorageContext } from "../../Contexts/StorageContext";
-import { toast } from "react-toastify";
+import { toast } from "react-hot-toast";
 
 function ProductItem({ data = {} }) {
   const storage = useContext(StorageContext);
@@ -19,16 +19,23 @@ function ProductItem({ data = {} }) {
       }
       return newState;
     });
-    toast.success("Thêm sản phẩm thành công");
+     toast.success("Thêm sản phẩm thành công", {
+       position: 'top-right',
+       style: {
+        marginTop: '40px' 
+      }
+   
+  });
   };
+
   return (
     <div>
-      <div className="nvd-product-card ">
+      <div className="nvd-product-card">
         <div
           style={{
             backgroundImage: `url('${data.image}')`,
           }}
-          className="h-[400px] sm:h-[540px]  bg-cover bg-no-repeat bg-center"
+          className="h-[400px] sm:h-[540px] bg-cover bg-no-repeat bg-center"
         >
           <div className="w-full h-full hover:bg-gray-900 hover:opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group:">
             <div

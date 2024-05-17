@@ -14,6 +14,8 @@ import Drinks from "./pages/Drinks";
 import Product from './ui/Product';
 // import Article from './article/Article';
 import Origin from './origin/Origin';
+import Contact from './contact/Contact';
+
 import CreateOrder, { action as createOrderAction } from './features/order/CreateOrder';
 import Order, { loader as orderLoader } from './features/order/Order';
 
@@ -43,7 +45,7 @@ function App() {
           containerStyle={{ margin: "8px" }}
           toastOptions={{
             success: {
-              duration: 3000,
+              duration: 1000,
             },
             error: {
               duration: 5000,
@@ -90,6 +92,8 @@ function AppContent() {
                   <Route path="menu" element={<Menu />} />
                   <Route path="cart" element={<Cart />} />
                   <Route path="product" element={<Product />} />
+                  <Route path="contact" element={<Contact />} />
+
                   {/* <Route path="article" element={<Article />} /> */}
                   <Route path="origin" element={<Origin />} />
                   <Route path="order/new" element={<CreateOrder />} />
