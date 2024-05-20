@@ -1,6 +1,53 @@
 p.logo23 {
-  font-size: 22px;
+    font-size: 22px;
 }
 p.profile {
-  color: #99cc33;
+    color: #99cc33;
+}
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+footer {
+    background-color: #292524; /* matches bg-stone-800 */
+    color: #e7e5e4; /* matches text-stone-200 */
+    padding: 1rem;
+}
+
+footer .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .logo23,
+footer .suport,
+footer .service,
+footer .profile {
+    margin: 1rem;
+}
+
+footer .suport li,
+footer .service li {
+    list-style: none;
+}
+
+footer .profile li1 {
+    list-style: none;
 }

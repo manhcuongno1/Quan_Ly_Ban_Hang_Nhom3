@@ -12,11 +12,11 @@ import { Toaster } from "react-hot-toast";
 import Account from "./pages/Account";
 import Drinks from "./pages/Drinks";
 import Product from './ui/Product';
-// import Article from './article/Article';
+import Article from './article/Article';
 import Origin from './origin/Origin';
 import Contact from './contact/Contact';
 
-import CreateOrder, { action as createOrderAction } from './features/order/CreateOrder';
+import CreateOrder from './features/order/CreateOrder';
 import Order, { loader as orderLoader } from './features/order/Order';
 
 
@@ -94,7 +94,7 @@ function AppContent() {
                   <Route path="product" element={<Product />} />
                   <Route path="contact" element={<Contact />} />
 
-                  {/* <Route path="article" element={<Article />} /> */}
+                  <Route path="article" element={<Article />} />
                   <Route path="origin" element={<Origin />} />
                   <Route path="order/new" element={<CreateOrder />} />
                   <Route path="order/:orderId" element={<Order  />} />
@@ -107,7 +107,7 @@ function AppContent() {
                             <Route path="dashboard" element={<Dashboard />} />
                           <Route path="account" element={<Account />} />
                           <Route path="drinks" element={<Drinks />} />
-              
+                        
               
                           </Route>
             

@@ -1,15 +1,24 @@
+// Cart.js
+import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import LinkButton from '../../ui/LinkButton';
 import Button from '../../ui/Button';
 import CartItem from './CartItem';
-import { useContext } from 'react';
 import { StorageContext } from '../../Contexts/StorageContext';
 import './Cart.css';
 
 function Cart() {
   const storage = useContext(StorageContext);
+  const navigate = useNavigate();
+
   const handleDeleteAll = () => {
     storage.setCartItems([]);
   };
+
+  const handleOrder = () => {
+    navigate('/order/new');
+  };
+
   return (
     <div className='px-4 py-3'>
       <LinkButton to='/product'>&larr; Trở về menu</LinkButton>
@@ -23,7 +32,7 @@ function Cart() {
       </ul>
 
       <div className='mt-6 space-x-2'>
-        <Button to='/order/new' type='primary'>
+        <Button onClick={handleOrder} type='primary'>
           Đặt hàng ngay
         </Button>
 

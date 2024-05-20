@@ -21,9 +21,9 @@ function ProductItem({ data = {} }) {
     });
      toast.success("Thêm sản phẩm thành công", {
        position: 'top-right',
-       style: {
-        marginTop: '40px' 
-      }
+      //  style: {
+      //   marginTop: '40px' 
+      // }
    
   });
   };

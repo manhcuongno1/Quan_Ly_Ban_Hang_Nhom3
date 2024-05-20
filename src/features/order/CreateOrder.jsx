@@ -40,7 +40,7 @@ function CreateOrder() {
         <div className="px-4 py-6">
             <h2 className="mb-8 text-xl font-semibold">Xác nhận đặt hàng</h2>
 
-            <Form method="POST">
+            <form >
                 <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center">
                     <label className="sm:basis-40">Họ Và Tên</label>
                     <input className="input grow" type="text" name="customer" required />
@@ -82,21 +82,21 @@ function CreateOrder() {
                     />
                     <Button type="primary">Đặt ngay</Button>
                 </div>
-            </Form>
+            </form>
         </div>
     );
 }
 
-export async function action({ request }) {
-    const formData = await request.formData();
-    const data = Object.fromEntries(formData);
-    const order = {
-        ...data,
-        cart: JSON.parse(data.cart),
-        priority: data.priority === "on",
-    };
-    const newOrder = await createOrder(order);
-    return redirect(`/order/${newOrder.id}`);
-}
+// export async function action({ request }) {
+//     const formData = await request.formData();
+//     const data = Object.fromEntries(formData);
+//     const order = {
+//         ...data,
+//         cart: JSON.parse(data.cart),
+//         priority: data.priority === "on",
+//     };
+//     const newOrder = await createOrder(order);
+//     return redirect(`/order/${newOrder.id}`);
+// }
 
 export default CreateOrder;

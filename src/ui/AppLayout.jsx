@@ -1,24 +1,21 @@
 import Header from './Header';
 import Loader from './Loader';
 import CartOverview from '../features/cart/CartOverview';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation} from "react-router-dom";
+
 
 function AppLayout() {
-//   const navigation = useNavigation();
-//   const isLoading = navigation.state === 'loading';
+  const location = useLocation();
+
 
   return (
-    <div className="grid h-screen grid-rows-[auto_1fr_auto]">
-      {/* {isLoading && <Loader />} */}
-
-      <Header />
-
-      <div className="overflow-scroll">
-        <main className="mx-auto max-w-3xl">
+    <div className="layout">
+      <Header />   
+        <main >
           <Outlet />
-        </main>
-      </div>
-
+      </main>
+      {!location.pathname.includes('/login') && <CartOverview />}
+      
     </div>
   );
 }
