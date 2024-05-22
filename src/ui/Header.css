@@ -1381,6 +1381,8 @@ a.nvd-top-menu-item.bg\:nvd-top-menu-item-active {
 a.nvd-top-menu-item {
   font-weight: bold;
   color: white;
+}a.nvd-top-menu-item:hover {
+  color:white;
 }
 a1.flex.items-center {
   font-weight: bold;
@@ -1389,4 +1391,8 @@ a1.flex.items-center {
 li7.account-item {
   font-weight: bold;
   color: white;
+}
+.account-dropdown {
+  width: 110px;
+  color: black;
 }

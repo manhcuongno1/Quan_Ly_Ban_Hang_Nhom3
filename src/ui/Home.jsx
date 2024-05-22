@@ -44,7 +44,9 @@ function Home() {
               Tích lũy đủ trên 50 đơn hàng để thành khách hàng cao cấp
             </div>
             <div className='nvd-button bg-gray-900 text-white w-max mx-auto md:mx-0'>
+            <a href='product'> 
               Bắt đầu mua sắm
+              </a>
             </div>
           </div>
         </div>

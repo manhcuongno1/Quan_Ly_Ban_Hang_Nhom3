@@ -38,29 +38,29 @@ export async function createEditDrink(newDrink, id) {
     );
     const imagePath = hasImagePath
         ? newDrink.image
-        : `${supabaseUrl}/storage/v1/object/public/cabin-images/${imageName}`;
+        : `${supabaseUrl}/storage/v1/object/public/Drink-image/${imageName}`;
 
     // 1. Create/edit cabin
     let query = supabase.from("Drinks");
 
     // A) CREATE
-    if (!id) query = query.insert([{ ...newDrink, image: imagePath }]);
+    if (!id) query = query.insert([{ ...newDrink, image: imagePath }]).select();
 
     // B) EDIT
-    if (id) query = query.update({ ...newDrink, image: imagePath }).eq("id", id);
+    if (id) query = query.update({ ...newDrink, image: imagePath }).eq("id", id).select();
 
     const { data, error } = await query.select().single();
 
     if (error) {
         console.error(error);
-        throw new Error("Drink could not be created");
+        throw new Error("Drink could not be create");
     }
 
     // 2. Upload image
     if (hasImagePath) return data;
 
     const { error: storageError } = await supabase.storage
-        .from("cabin-images")
+        .from("Drink-image")
         .upload(imageName, newDrink.image);
 
     // 3. Delete the cabin IF there was an error uplaoding image
@@ -71,7 +71,6 @@ export async function createEditDrink(newDrink, id) {
             "Drink image could not be uploaded and the cabin was not created"
         );
     }
-
     return data;
 }
 
@@ -107,9 +106,8 @@ export async function createDrink(newDrink) {
         await supabase.from("Drinks").delete().eq("id", data.id);
         console.error(storageError);
         throw new Error(
-            "Drink image could not be uploaded and the cabin was not created"
+"Drink image could not be uploaded and the cabin was not created"
         );
     }
     return data;
 }
-

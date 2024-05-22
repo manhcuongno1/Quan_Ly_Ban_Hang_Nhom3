@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import { useContext, useState } from 'react';
 import { StorageContext } from '../Contexts/StorageContext';
-
 function Header() {
   const [isActive, setIsActive] = useState(false);
   const storage = useContext(StorageContext);
@@ -76,6 +75,9 @@ function Header() {
                   </Link>
                   <Link to={'/register'} className='flex items-center space-x-1'>
                     <span>Đăng kí</span>
+                  </Link>
+                  <Link to={'/'} className='flex items-center space-x-1'>
+                    <span>Đăng xuất</span>
                   </Link>
                 </div>
               )}

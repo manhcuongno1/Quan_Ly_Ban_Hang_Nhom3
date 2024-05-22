@@ -58,7 +58,7 @@ function Origin() {
         <div>
           <img src='./imgs/favicon/123origin.png' className='origin-web-112' />
           <div>
-            <a href='/contact'>
+            <a href='/consultation'>
               <button className='sumbit-origin1'>ㅤ</button>
             </a>
           </div>

@@ -20,11 +20,7 @@ function ProductItem({ data = {} }) {
       return newState;
     });
      toast.success("Thêm sản phẩm thành công", {
-       position: 'top-right',
-      //  style: {
-      //   marginTop: '40px' 
-      // }
-   
+       position: 'top-right',   
   });
   };
 

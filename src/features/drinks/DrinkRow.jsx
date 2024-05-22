@@ -4,6 +4,7 @@ import { useDeleteDrink } from "./useDeleteDrink";
 import { HiPencil, HiTrash } from "react-icons/hi";
 import { useState } from "react";
 import { useCreateDrink } from "./useCreateDrink";
+import CreateDrinkForm from "./CreateDrinkForm";
 
 
 
@@ -79,6 +80,7 @@ function DrinkRow({ drink }) {
 
 
   return (
+    <>
     <TableRow role="row">
       <Img src={image} />
       <Id>{drinkId }</Id>
@@ -98,7 +100,9 @@ function DrinkRow({ drink }) {
             <HiTrash />
           </button>
       </div>
-    </TableRow>
+      </TableRow>
+      {showForm && <CreateDrinkForm drinkToEdit={drink} />}
+      </>
   );
 }
 

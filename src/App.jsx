@@ -15,6 +15,8 @@ import Product from './ui/Product';
 import Article from './article/Article';
 import Origin from './origin/Origin';
 import Contact from './contact/Contact';
+import Consultation from './consultation/Consultation';
+import Register from './register/Register';
 
 import CreateOrder from './features/order/CreateOrder';
 import Order, { loader as orderLoader } from './features/order/Order';
@@ -54,7 +56,7 @@ function App() {
               fontSize: "16px",
               maxWidth: "500px",
               padding: "16px 24px",
-              backgroundColor: "var(--color-grey-0)",
+              backgroundColor: "white",
               color: "var(--color-grey-700)",
             },
           }}
@@ -90,12 +92,14 @@ function AppContent() {
                                 <Route index element={<Home />} />
                   <Route path="home" element={<Home />} />
                   <Route path="menu" element={<Menu />} />
+                  <Route path="register" element={<Register/>} />
                   <Route path="cart" element={<Cart />} />
                   <Route path="product" element={<Product />} />
                   <Route path="contact" element={<Contact />} />
 
                   <Route path="article" element={<Article />} />
                   <Route path="origin" element={<Origin />} />
+                  <Route path="consultation" element={<Consultation />} />
                   <Route path="order/new" element={<CreateOrder />} />
                   <Route path="order/:orderId" element={<Order  />} />
            </Route>

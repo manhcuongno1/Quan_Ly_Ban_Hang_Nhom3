@@ -90,7 +90,9 @@ function ProductIntroduction() {
             cho các bạn trẻ đã, đang và sẽ theo học ngành CNTT.
           </h7>
           <div>
+          <a href='consultation'>
             <button className='consultation-button'>Xem Thêm Chi Tiết</button>
+            </a>
           </div>
         </div>
       </div>

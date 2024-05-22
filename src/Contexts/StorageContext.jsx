@@ -1,7 +1,5 @@
 import { createContext, useEffect, useState } from "react";
 
-// import Cookies from "js-cookie";
-
 export const StorageContext = createContext();
 
 function GlobalStates({ children }) {
@@ -13,10 +11,31 @@ function GlobalStates({ children }) {
   };
 
   const saveCartToLocalStorage = () => {
-    // Chuyển đổi mảng các mục giỏ hàng sang JSON
-    const cartJSON = JSON.stringify(cartItems);
-    // Lưu vào Local Storage với tên 'cart'
-    localStorage.setItem("cart", cartJSON);
+    console.log('cartItems', cartItems);
+    const cartJSON = localStorage.getItem("cart");
+
+    if (cartItems.length === 0 && cartJSON.length > 0) {
+      console.log('cartItems 2', cartItems)
+
+      // Lấy dữ liệu từ Local Storage
+      // Chuyển đổi từ JSON thành mảng các mục giỏ hàng
+      if (cartJSON) {
+        const cartData = JSON.parse(cartJSON);
+        setCartItems(cartData);
+      }
+
+      // // loadCartFromLocalStorage();
+      return;
+    }
+
+    if (cartItems.length > 0) {
+      // Chuyển đổi mảng các mục giỏ hàng sang JSON
+      const cartJSON = JSON.stringify(cartItems);
+      // Lưu vào Local Storage với tên 'cart'
+      localStorage.setItem("cart", cartJSON);
+
+      return
+    }
   };
 
   const loadCartFromLocalStorage = () => {

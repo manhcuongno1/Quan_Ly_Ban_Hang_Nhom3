@@ -1,18 +1,18 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { toast } from "react-hot-toast";
 import { createEditDrink } from "../../services/apiDrinks";
+import { toast } from "react-hot-toast";
 
-export function useCreateDrink() {
+export function useEditDrink() {
     const queryClient = useQueryClient();
 
-    const { mutate: createdrink, isLoading: isCreating } = useMutation({
-        mutationFn: createEditDrink,
+    const { mutate: editDrink, isLoading: isEditing } = useMutation({
+        mutationFn: ({ newDrinkData, id }) => createEditDrink(newDrinkData, id),
         onSuccess: () => {
-            toast.success("New drink successfully created");
+            toast.success("Drink successfully edited");
             queryClient.invalidateQueries({ queryKey: ["drinks"] });
         },
         onError: (err) => toast.error(err.message),
     });
 
-    return { isCreating, createdrink };
+    return { isEditing, editDrink };
 }

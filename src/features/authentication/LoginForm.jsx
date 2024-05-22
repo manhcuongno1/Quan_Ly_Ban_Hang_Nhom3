@@ -29,7 +29,7 @@ function LoginForm() {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <FormRowVertical label="Email address">
+      <FormRowVertical label="Địa Chỉ Email">
         <Input
           type="email"
           id="email"
@@ -39,7 +39,7 @@ function LoginForm() {
           onChange={(e) => setEmail(e.target.value)}
         />
       </FormRowVertical>
-      <FormRowVertical label="Password">
+      <FormRowVertical label="Mật Khẩu">
         <Input
           type="password"
           id="password"
@@ -49,7 +49,7 @@ function LoginForm() {
         />
       </FormRowVertical>
       <FormRowVertical>
-        <Button size="large">Login</Button>
+        <Button size="large">Đăng Nhập</Button>
       </FormRowVertical>
     </Form>
   );

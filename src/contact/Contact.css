@@ -1,57 +1,89 @@
-h1.contact {
-  font-size: 52px;
-  color: white;
-  transform: translateY(-150px) translateX(20px);
-}
-h2.contact-2 {
-  font-size: 25px;
-  color: #ffff99;
-  transform: translateY(-100px) translateX(20px);
-}
-input#name {
-  padding: 3px;
-  width: 285px;
-  transform: translateY(0px) translateX(10px);
-}
-input#number {
-  padding: 3px;
-  width: 285px;
-  transform: translateY(0px) translateX(10px);
-}
-textarea#message {
-  padding: 3px;
-  width: 285px;
-  transform: translateY(21px) translateX(10px);
-}
-label1 {
-  font-size: 30px;
-}
-label2 {
-  font-size: 30px;
-}
-label3 {
-  font-size: 30px;
-}
-button {
-  font-size: 25px;
-}
 .contact-from-container {
-  width: 1210px;
-  padding: 158px;
-  box-shadow: 0px 0px 21px rgb(0 0 0 / 20%);
-  background: #99ccff;
+  padding: 120px;
+  background-color: #0084cb;
+}
+h1.contact {
+  font-size: 65px;
+  color:white;
+  font-weight: bold;
+  transform: translateX(30px) translateY(-90px)
+}
+h2.contact1{
+  transform: translateX(350px) translateY(-93px);
+}
+h3.contact2{
+  color: #C0C0C0;
+  font-size: 20px;
+  transform: translateX(380px) translateY(-118px);
 }
 button.sumbit-btn1 {
-  background-color: #4caf50; /* Màu nền */
-  border: none; /* Không có viền */
-  color: white; /* Màu chữ */
-  padding: 10px 12px; /* Độ rộng và chiều cao của nút */
-  text-align: center; /* Căn giữa văn bản */
-  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  transform: translateX(200px) translateY(-60px)
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
   display: inline-block;
-  font-size: 16px; /* Kích thước chữ */
-  margin: 4px 2px; /* Khoảng cách xung quanh nút */
-  cursor: pointer; /* Con trỏ hiển thị khi di chuột vào nút */
-  border-radius: 10px; /* Bo tròn góc */
-  transform: translateY(71px) translateX(-10px);
+}
+
+input[type=submit] {
+  background-color: #0084cb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container-contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  padding: auto;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+select#country {
+  padding: 10px;
+}
+
+/* Bố cục linh hoạt: khi màn hình có chiều rộng dưới 600px thì hai cột chồng lên nhau thay vì nằm cạnh nhau */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+  }
 }

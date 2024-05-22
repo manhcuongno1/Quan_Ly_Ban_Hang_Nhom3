@@ -21,7 +21,7 @@ function Product() {
     <div className='my-10 px-4 text-center sm:my-16'>
       <div className='nvd-subheadline '>
         <div className='nvd-subheadline-deco-line '></div>
-        <div className='nvd-subheadline-lable '>more products</div>
+        <div className='nvd-subheadline-lable '>Toàn bộ sản phẩm</div>
         <div className='nvd-subheadline-deco-line '></div>
       </div>
       <div className='more-products w-[95%] xl:w-[65%] mx-auto mb-16'>
