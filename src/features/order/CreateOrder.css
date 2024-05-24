@@ -1,0 +1,9 @@
+input.input.w-full {
+    width: 1000px;
+}
+.absolute.bg-slate-100.text-gray-900.w-11\/12.bottom-4.left-1\/2.-translate-x-1\/2.group-hover\:block.group-hover\:animate-fadeIn.nvd-button {
+    background-color: white;
+}
+.absolute.bg-slate-100.text-gray-900.w-11\/12.bottom-4.left-1\/2.-translate-x-1\/2.group-hover\:block.group-hover\:animate-fadeIn.nvd-button:hover{
+    background-color: green;
+}

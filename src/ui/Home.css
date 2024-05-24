@@ -1,0 +1,320 @@
+img.home-web {
+    width: 1750px;
+    padding: 25px;
+    transform: translateX(-10px) translateY(-10px);
+}
+h1.home-web-1 {
+    font-size: 45px;
+    font-weight: bold;
+    transform: translateX(50px) translateY(0px);
+    color: #bf9369;
+
+}
+h2.home-web-2{
+    font-size: 25px;
+    font-weight: bold;
+}
+h3.home-web-3{
+    font-size: 25px;
+}
+.home-web-form-container {
+    width: 700px;
+    padding: 30px;
+    transform: translateX(30px) translateY(-20px); 
+
+}
+img.home-web-anh {
+    width: 450px;
+    padding: -5px;
+    transform: translateX(700px) translateY(-300px);
+}
+.home-page-button {
+    background-color: transparent; /* Màu nền trong suốt */
+    border: 2px solid #bf9369; /* Đường viền 2px màu xanh lá cây */
+    color:  #bf9369;; /* Màu chữ xanh lá cây */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    padding: 10px 105px;
+    transition:
+      background-color 0.3s,
+      color 0.3s; /* Hiệu ứng chuyển đổi */
+    transform: translateY(-309px) translateX(155px);
+  }
+  
+  .home-page-button:hover {
+    background-color: #d56268; /* Màu nền xanh lá cây khi di chuột qua */
+    color: black; /* Màu chữ trắng khi di chuột qua */
+  }
+  
+  .home-page-button:focus {
+    outline: none; /* Loại bỏ viền outline khi focus */
+    box-shadow: 0 0 5px #d56268; /* Đổ bóng khi focus */
+  }
+.home-web1-form123-container{
+    width: 400px;
+    transform: translateX(3px) translateY(-300px);
+}
+h1.home-web1-1{
+    font-size: 30px;
+    font-weight: 900;
+    transform: translateX(150px) translateY(50px);
+    color: #bf9369;
+}
+img.home-web-anh1 {
+    width: 450px;
+    padding: 80px;
+}
+.home-web1-form456-container{
+    width: 400px;
+    transform: translateX(403px) translateY(-865px);
+}
+h2.home-web1-2{
+    font-size: 30px;
+    font-weight: 900;
+    transform: translateX(150px) translateY(50px);
+    color: #bf9369; 
+}
+img.home-web-anh2 {
+    width: 450px;
+    padding: 80px;
+}
+.home-web1-form789-container{
+    width: 400px;
+    transform: translateX(803px) translateY(-1431px);
+}
+h3.home-web1-3{
+    font-size: 30px;
+    font-weight: 900;
+    transform: translateX(130px) translateY(50px);
+    color: #bf9369; 
+}
+img.home-web-anh3 {
+    width: 450px;
+    padding: 80px;
+}
+img.home-web-anh4 {
+    width: 700px;
+    padding: -30px;
+    transform: translateX(50px) translateY(-1450px);
+}
+.home-web123-container{
+    width: 500px;
+    transform: translateX(770px) translateY(-1910px);
+}
+h1.home-web123-1{
+    font-size: 30px;
+    font-weight: 900;
+}
+h2.home-web123-2{
+    font-size: 10px;
+}
+h3.home-web123-3{
+    font-size: 20px;
+}
+h4.home-web123-4{
+    font-size: 20px;
+}
+
+h5.home-web123-5{
+    font-size: 20px;
+}
+
+h6.home-web123-6{
+    font-size: 20px;
+}
+h7.home-web123-7{
+    font-size: 20px;
+}
+.home-web123-button {
+    background-color: transparent; /* Màu nền trong suốt */
+    border: 2px solid #bf9369; /* Đường viền 2px màu xanh lá cây */
+    color:  #bf9369;; /* Màu chữ xanh lá cây */
+    padding: 20px 30px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    padding: 10px 105px;
+    transition:
+      background-color 0.3s,
+      color 0.3s; /* Hiệu ứng chuyển đổi */
+    transform: translateY(-1839px) translateX(815px);
+  }
+  
+  .home-web123-button:hover {
+    background-color: #d56268; /* Màu nền xanh lá cây khi di chuột qua */
+    color: black; /* Màu chữ trắng khi di chuột qua */
+  }
+  
+  .home-web123-button:focus {
+    outline: none; /* Loại bỏ viền outline khi focus */
+    box-shadow: 0 0 5px #d56268; /* Đổ bóng khi focus */
+  }
+  .home-web456-container{
+    transform: translateX(40px) translateY(-1680px);
+  }
+  h1.home-web456-1{
+    font-size: 45px;
+    font-weight: 900;
+    color: #bf9369;
+    transform: translateX(370px);
+  }
+  img.home-web-tintuc {
+    width: 420px;
+    padding: 30px;
+    transform: translateX(10px) translateY(-1670px);
+}
+img.home-web-tintuc1 {
+    width: 420px;
+    padding: 30px;
+    transform: translateX(420px) translateY(-2210px);
+}
+img.home-web-tintuc2 {
+    width: 420px;
+    padding: 30px;
+    transform: translateX(824px) translateY(-2753px);
+}
+.home-web-tintuc-container{
+    background: #1abc9c;
+    color: #fff;
+    width: 130px;
+    transform: translateX(40px) translateY(-2770px); 
+}
+.home-web-tintuc-container1{
+    background: #1abc9c;
+    color: #fff;
+    width: 130px;
+    transform: translateX(451px) translateY(-2798px); 
+}
+.home-web-tintuc-container2{
+    background: #1abc9c;
+    color: #fff;
+    width: 130px;
+    transform: translateX(856px) translateY(-2823px); 
+}
+.home-tintucsukien-container{
+    width: 360px;
+    transform: translateX(40px) translateY(-2810px);
+}
+h1.home-tintucsukien-1{
+    font-size: 20px;
+    font-weight:700;
+}
+.home-tintucsukien123-container{
+
+    width: 360px;
+    transform: translateX(450px) translateY(-2967px);
+}
+.home-tintucsukien456-container{
+    width: 360px;
+    transform: translateX(855px) translateY(-3125px);
+}
+.home-tintuc-button {
+    width: 180px;
+    background-color: transparent; /* Màu nền trong suốt */
+    border: 2px solid black; /* Đường viền 2px màu xanh lá cây */
+    color:  black; /* Màu chữ xanh lá cây */
+    padding: 20px 5px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    padding: 10px;
+    transition:
+      background-color 0.3s,
+      color 0.3s; /* Hiệu ứng chuyển đổi */
+    transform: translateY(-3100px) translateX(35px);
+  }
+  
+  .home-tintuc-button:hover {
+    background-color: #1abc9c; /* Màu nền xanh lá cây khi di chuột qua */
+    color: black; /* Màu chữ trắng khi di chuột qua */
+  }
+  
+  .home-tintuc-button:focus {
+    outline: none; /* Loại bỏ viền outline khi focus */
+    box-shadow: 0 0 5px #1abc9c; /* Đổ bóng khi focus */
+  }
+  .home-tintuc1-button {
+    width: 180px;
+    background-color: transparent; /* Màu nền trong suốt */
+    border: 2px solid black; /* Đường viền 2px màu xanh lá cây */
+    color:  black; /* Màu chữ xanh lá cây */
+    padding: 20px 5px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    padding: 10px;
+    transition:
+      background-color 0.3s,
+      color 0.3s; /* Hiệu ứng chuyển đổi */
+    transform: translateY(-3150px) translateX(450px);
+  }
+  
+  .home-tintuc1-button:hover {
+    background-color: #1abc9c; /* Màu nền xanh lá cây khi di chuột qua */
+    color: black; /* Màu chữ trắng khi di chuột qua */
+  }
+  
+  .home-tintuc1-button:focus {
+    outline: none; /* Loại bỏ viền outline khi focus */
+    box-shadow: 0 0 5px #1abc9c; /* Đổ bóng khi focus */
+  }
+  .home-tintuc2-button {
+    width: 180px;
+    background-color: transparent; /* Màu nền trong suốt */
+    border: 2px solid black; /* Đường viền 2px màu xanh lá cây */
+    color:  black; /* Màu chữ xanh lá cây */
+    padding: 20px 5px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    padding: 10px;
+    transition:
+      background-color 0.3s,
+      color 0.3s; /* Hiệu ứng chuyển đổi */
+    transform: translateY(-3200px) translateX(855px);
+  }
+  
+  .home-tintuc2-button:hover {
+    background-color: #1abc9c; /* Màu nền xanh lá cây khi di chuột qua */
+    color: black; /* Màu chữ trắng khi di chuột qua */
+  }
+  
+  .home-tintuc2-button:focus {
+    outline: none; /* Loại bỏ viền outline khi focus */
+    box-shadow: 0 0 5px #1abc9c; /* Đổ bóng khi focus */
+  }
+  .sumbit-home-button {
+    background-color: transparent; /* Màu nền trong suốt */
+    color: black; /* Màu chữ xanh lá cây */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    padding: 173px 103px;
+    transition:
+      background-color 0.3s,
+      color 0.3s; /* Hiệu ứng chuyển đổi */
+    transform: translateY(-4990px) translateX(83px);
+  }
+  .sumbit-home-button1 {
+    background-color: transparent; /* Màu nền trong suốt */
+    color: black; /* Màu chữ xanh lá cây */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    padding: 173px 103px;
+    transition:
+      background-color 0.3s,
+      color 0.3s; /* Hiệu ứng chuyển đổi */
+    transform: translateY(-5360px) translateX(483px);
+  }
+  .sumbit-home-button2 {
+    background-color: transparent; /* Màu nền trong suốt */
+    color: black; /* Màu chữ xanh lá cây */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    padding: 173px 103px;
+    transition:
+      background-color 0.3s,
+      color 0.3s; /* Hiệu ứng chuyển đổi */
+    transform: translateY(-5730px) translateX(883px);
+  }
+
+

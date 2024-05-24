@@ -1,0 +1,107 @@
+img.origin-web-123 {
+  background-position: 70% 30%;
+  position: relative;
+  width: 550px;
+  padding: 00px;
+  width: 420px; /* Chiều rộng 500px */
+  height: 300px; /* Chiều cao 300px */
+  overflow: hidden;
+  cursor: zoom-in;
+  transform: translateY(0px) translateX(0px);
+}
+img.origin-web-456 {
+  background-position: 70% 30%;
+  position: relative;
+  width: 550px;
+  padding: 00px;
+  width: 420px; /* Chiều rộng 500px */
+  height: 300px; /* Chiều cao 300px */
+  overflow: hidden;
+  cursor: zoom-in;
+  transform: translateY(-300px) translateX(420px);
+}
+img.origin-web-789 {
+  background-position: 70% 30%;
+  position: relative;
+  width: 550px;
+  padding: 00px;
+  width: 420px; /* Chiều rộng 500px */
+  height: 300px; /* Chiều cao 300px */
+  overflow: hidden;
+  cursor: zoom-in;
+  transform: translateY(-600px) translateX(840px);
+}
+.element-origin {
+  border-bottom: 2px solid #000;
+  display: inline-block; /* Đảm bảo rằng đường gạch sẽ dài ra toàn bộ chiều rộng của phần tử */
+  width: 900px;
+  transform: translateY(-585px) translateX(135px);
+}
+h1.origin-web-1 {
+  font-size: 45px;
+}
+h2.origin-web-2 {
+  font-size: 25px;
+}
+h3.origin-web-3 {
+  font-size: 19px;
+}
+h4.origin-web-4 {
+  font-size: 19px;
+}
+h5.origin-web-5 {
+  font-size: 19px;
+}
+img.origin-web-111 {
+  background-position: 70% 30%;
+  position: relative;
+  width: 950px;
+  padding: 00px;
+  width: 380px; /* Chiều rộng 500px */
+  height: 280px; /* Chiều cao 300px */
+  overflow: hidden;
+  cursor: zoom-in;
+  transform: translateY(-1109px) translateX(900px);
+}
+.sumbit-origin {
+  background-color: transparent; /* Màu nền trong suốt */
+  color: black; /* Màu chữ xanh lá cây */
+  padding: 10px 20px; /* Khoảng cách bên trong */
+  font-size: 16px; /* Kích thước chữ */
+  cursor: pointer; /* Con trỏ chuột */
+  padding: 127px 180px;
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Hiệu ứng chuyển đổi */
+  transform: translateY(-1390px) translateX(900px);
+}
+img.origin-web-112 {
+  background-position: 70% 30%;
+  position: relative;
+  width: 950px;
+  padding: 00px;
+  width: 380px; /* Chiều rộng 500px */
+  height: 280px; /* Chiều cao 300px */
+  overflow: hidden;
+  cursor: zoom-in;
+  transform: translateY(-1369px) translateX(900px);
+}
+.sumbit-origin1 {
+  background-color: transparent; /* Màu nền trong suốt */
+  color: black; /* Màu chữ xanh lá cây */
+  padding: 10px 20px; /* Khoảng cách bên trong */
+  font-size: 16px; /* Kích thước chữ */
+  cursor: pointer; /* Con trỏ chuột */
+  padding: 127px 180px;
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Hiệu ứng chuyển đổi */
+  transform: translateY(-1649px) translateX(900px);
+}
+
+.origin-web123-form-container {
+  background: linear-gradient(to left, #fff, #cc9966);
+  width: 880px;
+  padding: 5px;
+  transform: translateY(-565px) translateX(9px);
+}
