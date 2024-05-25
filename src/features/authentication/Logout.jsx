@@ -6,8 +6,13 @@ import SpinnerMini from "../../ui/SpinnerMini";
 function Logout() {
   const { logout, isLoading } = useLogout();
 
+  const handleLogout = () => {
+    logout()
+    localStorage.removeItem('accessToken')
+    localStorage.removeItem('email')
+  }
   return (
-    <ButtonIcon disabled={isLoading} onClick={logout}>
+    <ButtonIcon disabled={isLoading} onClick={handleLogout}>
       {!isLoading ? <HiArrowRightOnRectangle /> : <SpinnerMini />}
     </ButtonIcon>
   );

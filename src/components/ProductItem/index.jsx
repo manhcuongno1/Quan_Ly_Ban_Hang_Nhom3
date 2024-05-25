@@ -37,7 +37,7 @@ function ProductItem({ data = {} }) {
           <div className="w-full h-full hover:bg-gray-900 hover:opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group:">
             <div
               onClick={handleAddItem}
-              className="absolute bg-slate-100 text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 group-hover:block group-hover:animate-fadeIn nvd-button"
+              className="absolute opacity-100 bg-slate-100 text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 group-hover:block group-hover:animate-fadeIn nvd-button"
             >
               Đặt ngay
             </div>

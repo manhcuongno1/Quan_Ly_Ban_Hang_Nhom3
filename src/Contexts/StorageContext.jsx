@@ -11,22 +11,14 @@ function GlobalStates({ children }) {
   };
 
   const saveCartToLocalStorage = () => {
-    const cartJSON = localStorage.getItem("cart");
 
-    if (cartItems.length === 0 && cartJSON.length > 0) {
-
-      // Lấy dữ liệu từ Local Storage
-      // Chuyển đổi từ JSON thành mảng các mục giỏ hàng
-      if (cartJSON) {
-        const cartData = JSON.parse(cartJSON);
-        setCartItems(cartData);
-      }
-
-      // // loadCartFromLocalStorage();
+    if (cartItems?.length === 0) {
+      localStorage.setItem("cart", JSON.stringify(cartItems))
+      setCartItems(cartItems);
       return;
     }
 
-    if (cartItems.length > 0) {
+    if (cartItems?.length > 0) {
       // Chuyển đổi mảng các mục giỏ hàng sang JSON
       const cartJSON = JSON.stringify(cartItems);
       // Lưu vào Local Storage với tên 'cart'

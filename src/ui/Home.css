@@ -13,9 +13,11 @@ h1.home-web-1 {
 h2.home-web-2{
     font-size: 25px;
     font-weight: bold;
+    color:#bf9369;
 }
 h3.home-web-3{
     font-size: 25px;
+    color: #bf9369;
 }
 .home-web-form-container {
     width: 700px;
@@ -36,6 +38,7 @@ img.home-web-anh {
     font-size: 16px; /* Kích thước chữ */
     cursor: pointer; /* Con trỏ chuột */
     padding: 10px 105px;
+    border-radius: 170px;
     transition:
       background-color 0.3s,
       color 0.3s; /* Hiệu ứng chuyển đổi */
@@ -43,8 +46,8 @@ img.home-web-anh {
   }
   
   .home-page-button:hover {
-    background-color: #d56268; /* Màu nền xanh lá cây khi di chuột qua */
-    color: black; /* Màu chữ trắng khi di chuột qua */
+    background-color: #bf9369; /* Màu nền xanh lá cây khi di chuột qua */
+    color: white; /* Màu chữ trắng khi di chuột qua */
   }
   
   .home-page-button:focus {
@@ -134,6 +137,7 @@ h7.home-web123-7{
     font-size: 16px; /* Kích thước chữ */
     cursor: pointer; /* Con trỏ chuột */
     padding: 10px 105px;
+    border-radius: 170px;
     transition:
       background-color 0.3s,
       color 0.3s; /* Hiệu ứng chuyển đổi */
@@ -141,8 +145,8 @@ h7.home-web123-7{
   }
   
   .home-web123-button:hover {
-    background-color: #d56268; /* Màu nền xanh lá cây khi di chuột qua */
-    color: black; /* Màu chữ trắng khi di chuột qua */
+    background-color: #bf9369; /* Màu nền xanh lá cây khi di chuột qua */
+    color: white; /* Màu chữ trắng khi di chuột qua */
   }
   
   .home-web123-button:focus {
@@ -316,5 +320,57 @@ h1.home-tintucsukien-1{
       color 0.3s; /* Hiệu ứng chuyển đổi */
     transform: translateY(-5730px) translateX(883px);
   }
+h1.home-web123-1
+{
+  color:#bf9369 ;
+}
+h2.home-web123-2
+{
+  color:#bf9369 ;
+}
+h3.home-web123-3
+{
+  color:#bf9369 ;
+}
+h4.home-web123-4
+{
+  color:#bf9369 ;
+}
+h5.home-web123-5
+{
+  color:#bf9369 ;
+}
+h6.home-web123-6
+{
+  color:#bf9369 ;
+}
+h7.home-web123-7  
+{
+  color:#bf9369 ;
+}
+.home-login{
+  color: white;
+  width: 180px;
+  background-color: #0000FF; /* Màu nền trong suốt */
+  border: 2px solid black; /* Đường viền 2px màu xanh lá cây */
+  font-size: 16px; /* Kích thước chữ */
+  font-weight: 650;
+  cursor: pointer; /* Con trỏ chuột */
+  padding: 10px;
+  width: 120px;
+  transform: translateX(15px);
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Hiệu ứng chuyển đổi */
+}
 
+.home-login:hover {
+  background-color: #bf9369; /* Màu nền xanh lá cây khi di chuột qua */
+  color: white; /* Màu chữ trắng khi di chuột qua */
+  font-weight: 650;
+}
 
+.home-login:focus {
+  outline: none; /* Loại bỏ viền outline khi focus */
+  box-shadow: 0 0 5px #1abc9c; /* Đổ bóng khi focus */
+}

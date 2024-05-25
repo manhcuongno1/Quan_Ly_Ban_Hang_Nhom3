@@ -17,6 +17,7 @@ function Product() {
         console.log(err);
       });
   }, []);
+  
   return (
     <div className='my-10 px-4 text-center sm:my-16'>
       <div className='nvd-subheadline '>

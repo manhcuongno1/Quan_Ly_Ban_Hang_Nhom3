@@ -1366,11 +1366,13 @@ video {
   color: tomato;
 }
 .bg-white.py-4 {
-  background-color: #d56268;
+  background-color: #000066;
 }
 h1.basis-2\/6.text-center.text-xl.font-semibold.cursor-pointer {
-  font-weight: bold;
-  color: white;
+  font-weight: 900;
+  color: #bf9369;
+  font-size: 35px;
+  transform: translateX(-30px);
 }
 
 a.nvd-top-menu-item.bg\:nvd-top-menu-item-active {
@@ -1395,4 +1397,11 @@ li7.account-item {
 .account-dropdown {
   width: 110px;
   color: black;
+}
+
+.home-login {
+  padding: 8px 10px;
+  color: white;
+  background-color: #bf9369;
+  border-radius: 4px;
 }

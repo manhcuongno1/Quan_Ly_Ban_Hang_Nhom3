@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #bf9369;
+    --light-green: #1abc9c;
+}
+
+.slider-image {
+    padding: 0 20px;
+    margin: 30px 0;
+}
+
+.slider-image img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.about {
+    padding: 0 20px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.about > * {
+    flex: 1;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 80%;
+    border-radius: 8px;
+}
+
+.about-head {
+    font-size: 40px;
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.about-sub {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.about-desc {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.button-primary {
+    background-color: transparent; /* Màu nền trong suốt */
+    border: 2px solid #bf9369; /* Đường viền 2px màu xanh lá cây */
+    color:  #bf9369;; /* Màu chữ xanh lá cây */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    padding: 10px 20px;
+    border-radius: 170px;
+    transition:
+      background-color 0.3s,
+      color 0.3s; /* Hiệu ứng chuyển đổi */
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-product {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.about2 {
+    padding: 30px 0
+}
+
+.about2 .about-desc {
+    margin: 0;
+}
+
+.news {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-items-img {
+    margin-bottom: 20px;
+}
+
+.news-tags {
+    display: inline-block;
+    padding: 4px;
+    border-radius: 4px;
+    color: white;
+    background-color: var(--light-green);
+    margin-bottom: 8px;
+}
+
+.news-bottom {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-button {
+    margin-top: auto;
+}
+
+.news-button {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+
+@media  screen and (max-width: 768px) {
+    .home-product {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

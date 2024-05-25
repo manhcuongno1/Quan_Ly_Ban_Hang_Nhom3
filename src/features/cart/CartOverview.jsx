@@ -3,11 +3,7 @@ import "./CartOverview.css";
 
 function CartOverview() {
     return (
-        <div id="root">
-            <div className="main-content">
-                {/* Add your main content here */}
-            </div>
-            <footer>
+        <footer>
                 <div className="flex items-center justify-between">
                     <p className="logo23">
                         Website bán hàng trực tuyến của Coffe IT <br />
@@ -52,17 +48,16 @@ function CartOverview() {
                     <p className="profile">
                         Thông Tin Liên Hệ
                         <br />
-                        <li1>Tầng 6, Tòa nhà Viettel, 11 Lý Thường Kiệt</li1>
+                        <li>Tầng 6, Tòa nhà Viettel, 11 Lý Thường Kiệt</li>
                         <br />
-                        <li1>Nhóm 3</li1>
+                        <li>Nhóm 3</li>
                         <br />
-                        <li1>thanhnhannguyen190502@gmail.com</li1>
+                        <li>thanhnhannguyen190502@gmail.com</li>
                         <br />
-                        <li1>0859314195</li1>
+                        <li>0859314195</li>
                     </p>
                 </div>
             </footer>
-        </div>
     );
 }
 

@@ -27,6 +27,7 @@ export async function login({ email, password }) {
 
     return data;
 }
+
 export async function getUser() {
     try {
         const { data: user, error } = await supabase.auth.getUser();

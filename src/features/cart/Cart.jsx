@@ -1,18 +1,27 @@
 // Cart.js
 import React, { useContext } from 'react';
-import LinkButton from '../../ui/LinkButton';
-import Button from '../../ui/Button';
-import CartItem from './CartItem';
+import { useNavigate } from 'react-router-dom';
 import { StorageContext } from '../../Contexts/StorageContext';
+import Button from '../../ui/Button';
+import LinkButton from '../../ui/LinkButton';
 import './Cart.css';
-import { Link } from 'react-router-dom';
+import CartItem from './CartItem';
 
 function Cart() {
+  const navigate = useNavigate()
   const storage = useContext(StorageContext);
-
   const handleDeleteAll = () => {
     storage.setCartItems([]);
   };
+
+  const handleRedirectToCheckout = () => {
+
+    if(!localStorage.getItem('accessToken')) {
+      navigate('/login')
+    } else {
+      navigate('/checkout')
+    }
+  }
 
 
   return (
@@ -28,11 +37,9 @@ function Cart() {
       </ul>
 
       <div className='mt-6 space-x-2'>
-        <Link to={'/checkout'}>
-          <Button  type='primary'>
+          <Button type='primary' onClick={handleRedirectToCheckout}>
             Đặt hàng ngay
           </Button>
-        </Link>
 
         <Button onClick={handleDeleteAll} type='secondary'>
           Xóa giỏ hàng
