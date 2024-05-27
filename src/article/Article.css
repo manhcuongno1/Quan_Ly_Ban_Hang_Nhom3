@@ -14,36 +14,44 @@
 }
 h1.title-origin {
   font-size: 40px;
+  color:#bf9369;
+  font-weight: 700;
 }
 h2.title-origin2 {
   font-size: 25px;
+  color:#bf9369;
 }
 h3.title-origin3 {
   font-size: 18px;
+  color: #14445c;
 }
 h4.title-origin4 {
   font-size: 18px;
+  color: #14445c;
 }
 h5.title-origin5 {
   font-size: 18px;
+  color: #14445c;
 }
 h6.title-origin6 {
   font-size: 18px;
+  color: #14445c;
 }
 .element {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #bf9369;
   display: inline-block; /* Đảm bảo rằng đường gạch sẽ dài ra toàn bộ chiều rộng của phần tử */
   width: 1200px;
   transform: translateY(-385px) translateX(-95px);
 }
 .origin-button {
   background-color: transparent; /* Màu nền trong suốt */
-  border: 2px solid black; /* Đường viền 2px màu xanh lá cây */
-  color: black; /* Màu chữ xanh lá cây */
+  border: 2px solid #bf9369; /* Đường viền 2px màu xanh lá cây */
+  color: #bf9369; /* Màu chữ xanh lá cây */
   padding: 10px 20px; /* Khoảng cách bên trong */
   font-size: 16px; /* Kích thước chữ */
   cursor: pointer; /* Con trỏ chuột */
   padding: 10px 105px;
+  border-radius: 170px;
   transition:
     background-color 0.3s,
     color 0.3s; /* Hiệu ứng chuyển đổi */
@@ -51,13 +59,13 @@ h6.title-origin6 {
 }
 
 .origin-button:hover {
-  background-color: #d56268; /* Màu nền xanh lá cây khi di chuột qua */
-  color: black; /* Màu chữ trắng khi di chuột qua */
+  background-color: #bf9369; /* Màu nền xanh lá cây khi di chuột qua */
+  color: white; /* Màu chữ trắng khi di chuột qua */
 }
 
 .origin-button:focus {
   outline: none; /* Loại bỏ viền outline khi focus */
-  box-shadow: 0 0 5px #d56268; /* Đổ bóng khi focus */
+  box-shadow: 0 0 5px #bf9369; /* Đổ bóng khi focus */
 }
 img.first-image {
   background-position: 70% 30%;
@@ -180,5 +188,5 @@ h7.title-consultation7 {
   width: 1270px;
   padding: 118px;
   box-shadow: 0px 0px 21px rgb(0 0 0 / 20%);
-  background: linear-gradient(to right, #fff, #cc9966);
+  /* background: linear-gradient(to right, #fff, #cc9966); */
 }

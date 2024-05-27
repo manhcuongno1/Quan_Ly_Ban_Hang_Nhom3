@@ -4,6 +4,9 @@ import { useDeleteDrink } from "./useDeleteDrink";
 import { HiPencil, HiTrash } from "react-icons/hi";
 import { useState } from "react";
 import { useCreateDrink } from "./useCreateDrink";
+import CreateDrinkForm from "./CreateDrinkForm";
+import ConfirmDelete from "../../ui/ConfirmDelete";
+import Modal from "../../ui/Modal";
 
 
 
@@ -79,6 +82,7 @@ function DrinkRow({ drink }) {
 
 
   return (
+    <>
     <TableRow role="row">
       <Img src={image} />
       <Id>{drinkId }</Id>
@@ -90,15 +94,40 @@ function DrinkRow({ drink }) {
          <Notsoldout>Vẫn còn hàng</Notsoldout>
 
       )}
-      <div>
-        <button onClick={() => setShowForm((show) => !show)}>
+        <div>
+           <Modal>
+          
+          <Modal.Open opens="edit">
+            <button>
+              <HiPencil />
+            </button>
+          </Modal.Open>
+          <Modal.Window name="edit">
+            <CreateDrinkForm drinkToEdit={drink} />
+          </Modal.Window>
+          <Modal.Open opens="delete">
+            <button>
+              <HiTrash />
+            </button>
+          </Modal.Open>
+          <Modal.Window name="delete">
+            <ConfirmDelete
+              resourceName="drinks"
+              disabled={isDeleting}
+              onConfirm={() => deleteDrink(drinkId)}
+            />
+          </Modal.Window>
+        </Modal>
+        {/* <button onClick={() => setShowForm((show) => !show)}>
             <HiPencil />
           </button>
         <button onClick={() => deleteDrink(drinkId)} disabled={isDeleting}>
             <HiTrash />
-          </button>
+          </button> */}
       </div>
-    </TableRow>
+      </TableRow>
+      {showForm && <CreateDrinkForm drinkToEdit={drink} />}
+      </>
   );
 }
 

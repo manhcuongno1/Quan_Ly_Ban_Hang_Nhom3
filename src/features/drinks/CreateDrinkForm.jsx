@@ -8,26 +8,61 @@ import FileInput from "../../ui/FileInput";
 import FormRow from "../../ui/FormRow";
 
 import { useForm } from "react-hook-form";
-import { createDrink } from "../../services/apiDrinks";
+import { createEditDrink } from "../../services/apiDrinks";
+import { useCreateDrink } from "./useCreateDrink";
+import { useEditDrink } from "./useEditDrink";
 
-function CreateDrinkForm() {
-  const { register, handleSubmit, reset, getValues, formState } = useForm();
+function CreateDrinkForm({ drinkToEdit = {},onCloseModal}) {
+  
+  
+  const { isCreating, createdrink } = useCreateDrink();
+  const { isEditing, editDrink } = useEditDrink();
+
+  const { id: editId, ...editValues } = drinkToEdit;
+  const isEditSession = Boolean(editId);
+  const { register, handleSubmit, reset, getValues, formState } = useForm({
+    defaultValues: isEditSession ? editValues : {},
+  });
   const { errors } = formState;
 
-  const queryClient = useQueryClient();
+  // const queryClient = useQueryClient();
 
-  const { mutate, isLoading: isCreating } = useMutation({
-    mutationFn: createDrink,
-    onSuccess: () => {
-      toast.success("New drink successfully created");
-      queryClient.invalidateQueries({ queryKey: ["drinks"] });
-      reset();
-    },
-    onError: (err) => toast.error(err.message),
-  });
+  // const { mutate, isLoading: isCreating } = useMutation({
+  //   mutationFn: createEditDrink,
+  //   onSuccess: () => {
+  //     toast.success("New drink successfully created");
+  //     queryClient.invalidateQueries({ queryKey: ["drinks"] });
+  //     reset();
+  //   },
+  //   onError: (err) => toast.error(err.message),
+  // });
 
   function onSubmit(data) {
-      mutate({ ...data, image: data.image[0] });
+    // mutate({ ...data, image: data.image[0] });
+    const image = typeof data.image === "string" ? data.image : data.image[0];
+
+    if (isEditSession)
+      editDrink(
+        { newDrinkData: { ...data, image }, id: editId },
+        {
+          onSuccess: (data) => {
+            reset();
+            onCloseModal?.();
+            
+          },
+        }
+      );
+    else
+      createdrink(
+        { ...data, image: image },
+        {
+          onSuccess: (data) => {
+            reset();
+            onCloseModal?.();
+
+          },
+        }
+      );
   }
 
   function onError(errors) {
@@ -85,7 +120,7 @@ function CreateDrinkForm() {
           id="image"
           accept="image/*"
           {...register("image", {
-            required: "This field is required",
+            required: isEditSession ? false : "This field is required",
           })}
         />
       </FormRow>
@@ -95,7 +130,9 @@ function CreateDrinkForm() {
         <ButtonAdmin variation="secondary" type="reset">
           Cancel
         </ButtonAdmin>
-        <ButtonAdmin disabled={isCreating}>Add drink</ButtonAdmin>
+        <ButtonAdmin disabled={isCreating}>
+          {isEditSession ? "Edit drink" : "Create new drink"}
+        </ButtonAdmin>
       </FormRow>
     </Form>
   );

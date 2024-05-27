@@ -19,7 +19,7 @@ function ProductIntroduction() {
           <StyledImage src='./imgs/favicon/anhquancf.jpg' />
         </div>
         <div className='origin-form-container'>
-          <h1 className='title-origin'> Nguồn Gốc </h1>
+          <h1 className='title-origin'> Nguồn gốc </h1>
           <h2 className='title-origin2'>CÂU CHUYỆN NÀY LÀ CỦA CHÚNG MÌNH</h2>
           <h3 className='title-origin3'>
             Coffe IT được thành lập từ những chàng trai sinh viên có đam mê lập trình,bắt nguồn từ
@@ -86,11 +86,13 @@ function ProductIntroduction() {
           <h6 className='title-consultation6'>
             thu hẹp khoảng cách giữa nhà trường và doanh nghiệp, tạo cơ hội việc làm
           </h6>
-          <h7 className='title-consultation7'>
+          <h6 className='title-consultation7'>
             cho các bạn trẻ đã, đang và sẽ theo học ngành CNTT.
-          </h7>
+          </h6>
           <div>
+          <a href='consultation'>
             <button className='consultation-button'>Xem Thêm Chi Tiết</button>
+            </a>
           </div>
         </div>
       </div>

@@ -8,6 +8,8 @@ import Login from "./pages/Login";
 import AppLayout from "./ui/AppLayout";
 import Home from "./ui/Home";
 import Users from "./pages/Users";
+import Bookings from "./pages/Bookings";
+
 import { Toaster } from "react-hot-toast";
 import Account from "./pages/Account";
 import Drinks from "./pages/Drinks";
@@ -17,14 +19,14 @@ import Origin from './origin/Origin';
 import Contact from './contact/Contact';
 
 import CreateOrder from './features/order/CreateOrder';
-import Order, { loader as orderLoader } from './features/order/Order';
-
-
-
-
-import Menu, { loader as menuLoader } from './features/menu/Menu';
+import Order  from './features/order/Order';
+import Menu from './features/menu/Menu';
 import Cart from "./features/cart/Cart";
-import { ToastContainer } from "react-toastify";
+
+import { DarkModeProvider } from "./Contexts/DarkModeContext";
+import Settings from "./pages/Settings";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools/production";
+import Register from "./pages/Register";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -35,8 +37,10 @@ const queryClient = new QueryClient({
 });
 
 function App() {
-    return (
+  return (
+      <DarkModeProvider>
       <QueryClientProvider client={queryClient}>
+        <ReactQueryDevtools initialIsOpen={false} />
       
             <AppContent />
             <Toaster
@@ -54,13 +58,14 @@ function App() {
               fontSize: "16px",
               maxWidth: "500px",
               padding: "16px 24px",
-              backgroundColor: "var(--color-grey-0)",
+              backgroundColor: "white",//var(--color-grey-0)
               color: "var(--color-grey-700)",
             },
           }}
         />
         
-        </QueryClientProvider>
+      </QueryClientProvider>
+      </DarkModeProvider>
     );
 }
 
@@ -81,6 +86,8 @@ function AppContent() {
                             <Route path="dashboard" element={<Dashboard />} />
                             <Route path="users" element={<Users />} />
                 <Route path="account" element={<Account />} />
+                <Route path="bookings" element={<Bookings />} />
+
                 
 
                         </Route>
@@ -96,6 +103,8 @@ function AppContent() {
 
                   <Route path="article" element={<Article />} />
                   <Route path="origin" element={<Origin />} />
+                  <Route path="register" element={<Register />} />
+
                   <Route path="order/new" element={<CreateOrder />} />
                   <Route path="order/:orderId" element={<Order  />} />
            </Route>
@@ -107,7 +116,9 @@ function AppContent() {
                             <Route path="dashboard" element={<Dashboard />} />
                           <Route path="account" element={<Account />} />
                           <Route path="drinks" element={<Drinks />} />
-                        
+              <Route path="settings" element={<Settings />} />
+                <Route path="bookings" element={<Bookings />} />
+              
               
                           </Route>
             

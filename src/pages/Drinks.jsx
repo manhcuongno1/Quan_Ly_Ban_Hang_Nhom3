@@ -6,6 +6,7 @@ import DrinkTable from "../features/drinks/DrinkTable";
 import ButtonAdmin from "../ui/ButtonAdmin";
 import { useState } from "react";
 import CreateDrinkForm from "../features/drinks/CreateDrinkForm";
+import Modal from "../ui/Modal";
 function Drinks() {
   const [showForm, setShowForm] = useState(false);
   return (
@@ -19,9 +20,18 @@ function Drinks() {
       <Row>
         <DrinkTable />
         
-        <ButtonAdmin onClick={() => setShowForm((show) => !show)}>
+
+        <Modal>
+        <Modal.Open opens="drink-form">
+          <ButtonAdmin>Add new drink</ButtonAdmin>
+        </Modal.Open>
+        <Modal.Window name="drink-form">
+          <CreateDrinkForm />
+        </Modal.Window>
+      </Modal>
+        {/* <ButtonAdmin onClick={() => setShowForm((show) => !show)}>
           Add new drink
-        </ButtonAdmin>
+        </ButtonAdmin> */}
         {showForm && <CreateDrinkForm />}
       </Row>
     </>

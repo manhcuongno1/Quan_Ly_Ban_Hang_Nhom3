@@ -13,7 +13,7 @@ const StyledHeader = styled.header`
   justify-content: flex-end;
 `;
 
-function Header() {
+function HeaderAdmin() {
     return <StyledHeader>
         <UserAvatar/>
         <HeaderMenu />
@@ -21,4 +21,4 @@ function Header() {
     </StyledHeader>;
 }
 
-export default Header;
+export default HeaderAdmin;
