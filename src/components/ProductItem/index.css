@@ -1,0 +1,9 @@
+.absolute.opacity-100.bg-slate-100.text-gray-900.w-11\/12.bottom-4.left-1\/2.-translate-x-1\/2.group-hover\:block.group-hover\:animate-fadeIn.nvd-button {
+    background: #bf9369;
+    font-weight: 600;
+    color: white;
+}
+.absolute.opacity-100.bg-slate-100.text-gray-900.w-11\/12.bottom-4.left-1\/2.-translate-x-1\/2.group-hover\:block.group-hover\:animate-fadeIn.nvd-button:hover {
+    background-color: green; /* Màu nền xanh lá cây khi di chuột qua */
+    color: white; /* Màu chữ trắng khi di chuột qua */
+  }

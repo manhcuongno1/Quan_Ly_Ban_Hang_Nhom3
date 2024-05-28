@@ -1,0 +1,106 @@
+.contact-from-container {
+  padding: 120px;
+  background-color: #0084cb;
+}
+h1.contact {
+  font-size: 65px;
+  color:white;
+  font-weight: bold;
+  transform: translateX(30px) translateY(-90px)
+}
+h2.contact1{
+  transform: translateX(350px) translateY(-93px);
+}
+h3.contact2{
+  color: #C0C0C0;
+  font-size: 20px;
+  transform: translateX(380px) translateY(-118px);
+}
+button.sumbit-btn1 {
+  color: white;
+  font-size: 30px;
+  transform: translateX(200px) translateY(-60px)
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #0084cb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container-contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  padding: auto;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+select#country {
+  padding: 10px;
+}
+
+/* Bố cục linh hoạt: khi màn hình có chiều rộng dưới 600px thì hai cột chồng lên nhau thay vì nằm cạnh nhau */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+  }
+}
+.contact1-from-container{}
+.contact-img{
+  height: 500px;
+  width: 100%;
+}
+.lienhe-container{
+  width: 1300px;
+  background-color: white;
+  color: #000;
+  transform: translateX(-20px)translateY(-1015px);
+}
+h1.lienhe-container-text{
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center
+
+}

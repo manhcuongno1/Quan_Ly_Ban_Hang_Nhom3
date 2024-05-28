@@ -1,0 +1,208 @@
+/* img {
+  background-position: 70% 30%;
+  position: relative;
+  width: 500px;
+  padding: 20px;
+  overflow: hidden;
+  cursor: zoom-in;
+  transform: translateY(-137px) translateX(620px);
+} */
+.origin-form-container {
+  width: 780px;
+  padding: 5px;
+  transform: translateY(-455px) translateX(-95px);
+}
+h1.title-origin {
+  font-size: 40px;
+  color:#bf9369;
+  font-weight: 700;
+}
+h2.title-origin2 {
+  font-size: 25px;
+  color:#bf9369;
+}
+h3.title-origin3 {
+  font-size: 18px;
+  color: #14445c;
+}
+h4.title-origin4 {
+  font-size: 18px;
+  color: #14445c;
+}
+h5.title-origin5 {
+  font-size: 18px;
+  color: #14445c;
+}
+h6.title-origin6 {
+  font-size: 18px;
+  color: #14445c;
+}
+.element {
+  border-bottom: 2px solid #bf9369;
+  display: inline-block; /* Đảm bảo rằng đường gạch sẽ dài ra toàn bộ chiều rộng của phần tử */
+  width: 1200px;
+  transform: translateY(-385px) translateX(-95px);
+}
+.origin-button {
+  background-color: transparent; /* Màu nền trong suốt */
+  border: 2px solid #bf9369; /* Đường viền 2px màu xanh lá cây */
+  color: #bf9369; /* Màu chữ xanh lá cây */
+  padding: 10px 20px; /* Khoảng cách bên trong */
+  font-size: 16px; /* Kích thước chữ */
+  cursor: pointer; /* Con trỏ chuột */
+  padding: 10px 105px;
+  border-radius: 170px;
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Hiệu ứng chuyển đổi */
+  transform: translateY(-459px) translateX(135px);
+}
+
+.origin-button:hover {
+  background-color: #bf9369; /* Màu nền xanh lá cây khi di chuột qua */
+  color: white; /* Màu chữ trắng khi di chuột qua */
+}
+
+.origin-button:focus {
+  outline: none; /* Loại bỏ viền outline khi focus */
+  box-shadow: 0 0 5px #bf9369; /* Đổ bóng khi focus */
+}
+img.first-image {
+  background-position: 70% 30%;
+  position: relative;
+  width: 500px;
+  padding: 20px;
+  overflow: hidden;
+  cursor: zoom-in;
+  transform: translateY(-453px) translateX(-115px);
+}
+.service-form-container {
+  width: 780px;
+  padding: 5px;
+  transform: translateY(-795px) translateX(375px);
+}
+h1.title-service {
+  font-weight: 700;
+  color: #bf9369;
+  font-size: 40px;
+}
+h2.title-service2 {
+  color: #bf9369;
+  font-size: 25px;
+}
+h3.title-service3 {
+  color: #14445c;
+  font-size: 18px;
+}
+h4.title-service4 {
+  color: #14445c;
+  font-size: 18px;
+}
+h5.title-service5 {
+  color: #14445c;
+  font-size: 18px;
+}
+.service-button {
+  background-color: transparent; /* Màu nền trong suốt */
+  border: 2px solid #bf9369; /* Đường viền 2px màu xanh lá cây */
+  color: #bf9369; /* Màu chữ xanh lá cây */
+  padding: 10px 20px; /* Khoảng cách bên trong */
+  font-size: 16px; /* Kích thước chữ */
+  cursor: pointer; /* Con trỏ chuột */
+  border-radius: 170px;
+  padding: 10px 105px;
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Hiệu ứng chuyển đổi */
+  transform: translateY(59px) translateX(135px);
+}
+.service-button:hover {
+  background-color: #bf9369; /* Màu nền xanh lá cây khi di chuột qua */
+  color: white; /* Màu chữ trắng khi di chuột qua */
+}
+
+.service-button:focus {
+  outline: none; /* Loại bỏ viền outline khi focus */
+  box-shadow: 0 0 5px #d56268; /* Đổ bóng khi focus */
+}
+.element1 {
+  border-bottom: 2px solid #000;
+  display: inline-block; /* Đảm bảo rằng đường gạch sẽ dài ra toàn bộ chiều rộng của phần tử */
+  width: 1200px;
+  transform: translateY(-720px) translateX(-95px);
+}
+img.second-image {
+  background-position: 70% 30%;
+  position: relative;
+  width: 600px;
+  padding: 00px;
+  overflow: hidden;
+  cursor: zoom-in;
+  transform: translateY(-721px) translateX(520px);
+}
+.consultation-form-container {
+  width: 780px;
+  padding: 5px;
+  transform: translateY(-1045px) translateX(-95px);
+}
+
+h1.title-consultation {
+  font-weight: 700;
+  color:#bf9369;
+  font-size: 40px;
+}
+h2.title-consultation2 {
+  color: #14445c;
+  font-size: 22.5px;
+}
+h3.title-consultation3 {
+  color: #14445c;
+  font-size: 18px;
+}
+h4.title-consultation4 {
+  color: #14445c;
+  font-size: 18px;
+}
+h5.title-consultation5 {
+  color: #14445c;
+  font-size: 18px;
+}
+h6.title-consultation6 {
+  color: #14445c;
+  font-size: 18px;
+}
+h6.title-consultation7 {
+  color: #14445c;
+  font-size: 18px;
+}
+.consultation-button {
+  background-color: transparent; /* Màu nền trong suốt */
+  border: 2px solid #bf9369; /* Đường viền 2px màu xanh lá cây */
+  color: #bf9369; /* Màu chữ xanh lá cây */
+  padding: 10px 20px; /* Khoảng cách bên trong */
+  font-size: 16px; /* Kích thước chữ */
+  cursor: pointer; /* Con trỏ chuột */
+  border-radius: 170px;
+  padding: 10px 105px;
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Hiệu ứng chuyển đổi */
+  transform: translateY(32px) translateX(85px);
+}
+.consultation-button:hover {
+  background-color: #bf9369; /* Màu nền xanh lá cây khi di chuột qua */
+  color: white; /* Màu chữ trắng khi di chuột qua */
+}
+
+.consultation-button:focus {
+  outline: none; /* Loại bỏ viền outline khi focus */
+  box-shadow: 0 0 5px #d56268; /* Đổ bóng khi focus */
+}
+
+.article-form-container {
+  max-height: 1200px;
+  width: 1270px;
+  padding: 118px;
+  box-shadow: 0px 0px 21px rgb(0 0 0 / 20%);
+  /* background: linear-gradient(to right, #fff, #cc9966); */
+}
